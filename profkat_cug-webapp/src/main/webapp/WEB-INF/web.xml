@@ -1,0 +1,23 @@
+<web-app version="5.0"
+         xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd">
+                    
+	<display-name>profkat_cug</display-name>
+	<description>Catalogus Universitatis Gottingensis</description>
+
+	<servlet id="ProfKatBeaconTxtServlet">
+		<servlet-name>ProfKatBeaconTxtServlet</servlet-name>
+		<servlet-class>org.mycore.profkat.pndbeacon.ProfKatBeaconTxtServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProfKatBeaconTxtServlet</servlet-name>
+		<url-pattern>/beacon.txt</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+
+</web-app>
