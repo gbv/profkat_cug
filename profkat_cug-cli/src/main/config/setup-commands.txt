@@ -1,0 +1,16 @@
+reload solr configuration main in core main
+reload solr configuration classification in core classification
+update all classifications from directory config/classification
+init superuser
+encrypt passwords in user xml file config/user/user_editorA.xml to file config/user_encrypted/user_editorA.xml
+update user from file config/user_encrypted/user_editorA.xml
+encrypt passwords in user xml file config/user/user_editorB.xml to file config/user_encrypted/user_editorB.xml
+update user from file config/user_encrypted/user_editorB.xml
+encrypt passwords in user xml file config/user/user_api.xml to file config/user_encrypted/user_api.xml
+update user from file config/user_encrypted/user_api.xml
+encrypt passwords in user xml file config/user/user_editorWeb.xml to file config/user_encrypted/user_editorWeb.xml
+update user from file config/user_encrypted/user_editorWeb.xml
+update classification from uri resource:config/profkat-base/classification/derivate_types.xml
+update classification from uri resource:config/profkat-base/classification/state.xml
+deploy workflow processdefinition from resource config/workflow/processdefinitions/create_object_simple.bpmn20.xml
+rebuild solr classification index in core classification

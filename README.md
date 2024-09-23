@@ -10,7 +10,8 @@ Hier entsteht ein Anwendungsmodul für den auf MyCoRe basierenden [Professorenka
 * change to cli directory
 * run `bin/profkat_cug.sh create configuration directory`
 * you now have a config dir `~/.mycore/profkat_cug`
-* configure your database connection in `~/.mycore/profkat_cug/resources/META-INF/persistence.xml`
+* configure your database connection in `~/.mycore/profkat_cug/mycore.properties`
+* configure your BPM-Engine h2 connection in `~/.mycore/profkat_cug/resources/camunda.cfg.xml`
 * perhaps you need to download a driver to `~/.mycore/profkat_cug/lib/`
 * run cli command `bin/profkat_cug.sh process config/setup-commands.txt to load default data`
 * Go to profkat_cug-webapp
