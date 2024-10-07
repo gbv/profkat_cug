@@ -7,6 +7,11 @@
   <version>2024.06-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Catalogus Universitatis Gottingensis</name>
+  <description>The main Maven project for Catalogus Universitatis Gottingensis</description>
+  <organization>
+    <name>Georg-August Universität Göttingen</name>
+    <url>https://www.uni-goettingen.de/</url>
+  </organization>
   <inceptionYear>2024</inceptionYear>
   <properties>
     <java.target.version>21</java.target.version>

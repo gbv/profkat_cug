@@ -41,13 +41,10 @@
   <div class="ir-header" style="position: relative;">
     <div class="container d-none d-md-block mb-3">
       <div class="row">
-        <div class="col ir-logo">
-            <div class="float-left mr-4 mt-3" style="font-size:2.75em">
-              <i class="fas fa-university"></i>
-            </div>
-            <div class="mt-4">
-             <h1> Beispiel-Professoren-Katalog</a>
-          </div> 
+        <div class="col ir-logo mt-4">
+            <img style="width: 80px;float: left;margin-right: 20px;" src="https://media.aubi-plus.com/institution/thumbnail/878abeb-georg-august-universitaet-goettingen-logo.jpg" />
+            <h1> Catalogus Universitatis Gottingensis </h1>
+         </div>
       </div>
     </div>
   </div>
