@@ -216,5 +216,5 @@ sed -ri "s/(-DMCR.ConfigDir=).+( \\\\)/\-DMCR.ConfigDir=${MCR_CONFIG_DIR_ESCAPED
 rm -rf /usr/local/tomcat/webapps/*
 cp /opt/cug/cug.war "/usr/local/tomcat/webapps/${APP_CONTEXT}.war"
 
-export JAVA_OPTS="-DMCR.ConfigDir=${MCR_CONFIG_DIR} -Xmx${XMX} -Xms${XMS} ${APP_OPTS}"
+export JAVA_OPTS="-DMCR.ConfigDir=${MCR_CONFIG_DIR} -Xmx${APP_XMX} -Xms${APP_XMS} ${APP_OPTS}"
 catalina.sh run
