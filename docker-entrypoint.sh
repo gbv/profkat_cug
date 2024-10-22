@@ -102,12 +102,12 @@ function setDockerValues() {
 
     if [ -n "${JDBC_URL}" ]; then
       setOrAddProperty "MCR.JPA.URL" "${JDBC_URL}"
-      setOrAddProperty "MCR.Workflow.ProcessEngine.JdbcUrl" "${JDBC_URL}"
+      setOrAddProperty "MCR.Workflow.ProcessEngine.JdbcUrl" "${JDBC_URL}?currentSchema=${HIBERNATE_SCHEMA}_bpm"
     fi
 
     if [ -n "${HIBERNATE_SCHEMA}" ]; then
       setOrAddProperty "MCR.JPA.DefaultSchema" "${HIBERNATE_SCHEMA}"
-      setOrAddProperty "MCR.Workflow.ProcessEngine.DatabaseSchema" "${HIBERNATE_SCHEMA}"
+      setOrAddProperty "MCR.Workflow.ProcessEngine.DatabaseSchema" "${HIBERNATE_SCHEMA}_bpm"
     fi
 
     if [ -n "${SOLR_ADMIN_USER}" ]; then
