@@ -23,6 +23,7 @@
         <navitem id="search_profkat-extended" i18n="Nav.Profkat.Search.Extended" href="do/search/profkat-extended" />
         <navitem id="classbrowser_subject" i18n="Nav.Profkat.Search.Subject" href="do/classbrowser/subject" />
         <navitem id="classbrowser_institution" i18n="Nav.Profkat.Search.Institution" href="do/classbrowser/institution" />
-      </navitem>     
+        <navitem id="classbrowser_epoch" i18n="Nav.Profkat.Search.Epoch" href="do/classbrowser/epoch" />
+      </navitem>
   </navigation>
 </navigations>

@@ -21,7 +21,7 @@
       <div class="container">
         <div class="row">
           <div class="col-4">
-            <img class="w-100" src="${WebApplicationBaseURL}images/pexels-ivan-bertolazzi-2681405.jpg" />
+            <img class="w-100" alt="Die historische Uni-Bibliothek in Göttingen" src="${WebApplicationBaseURL}images/SUB_Goettingen_Paulinerkirche.jpg" />
           </div>
           <div class="col-8">
             <mcr:includeWebcontent id="start" file="start.html" />    
