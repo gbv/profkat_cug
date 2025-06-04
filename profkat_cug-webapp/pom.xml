@@ -12,7 +12,23 @@
   <name>Professorenkatalog: WebApp</name>
   <description>Web application that bundles are part in a single artifact</description>
   <properties>
+    <MCR.AppName>cug</MCR.AppName>
     <bootstrap.version>4.6.1</bootstrap.version>
+    <cargo.container.zipUrlInstaller.downloadDir>${settings.localRepository}/../cargo/containers</cargo.container.zipUrlInstaller.downloadDir>
+    <cargo.debug.address>8295</cargo.debug.address>
+    <cargo.debug.suspend>n</cargo.debug.suspend>
+    <cargo.deployable.default.artifactId>${project.artifactId}</cargo.deployable.default.artifactId>
+    <cargo.deployable.default.context>/</cargo.deployable.default.context>
+    <cargo.deployable.default.groupId>${project.groupId}</cargo.deployable.default.groupId>
+    <cargo.jvmargs>-DMCR.AppName=${MCR.AppName}</cargo.jvmargs>
+    <cargo.start.jvmargs>${cargo.jvmargs}</cargo.start.jvmargs>
+    <cargo.rmi.port>8290</cargo.rmi.port>
+    <cargo.servlet.port>8080</cargo.servlet.port>
+    <cargo.servlet.uriencoding>UTF-8</cargo.servlet.uriencoding>
+    <cargo.start.jvmargs />
+    <cargo.tomcat.ajp.port>8292</cargo.tomcat.ajp.port>
+    <cargo.version>1.10.15</cargo.version>
+    <tomcat.version>10.1.41</tomcat.version>
   </properties>
   <build>
     <finalName>profkat_cug-${project.version}</finalName>
@@ -49,6 +65,28 @@
             </configuration>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.cargo</groupId>
+        <artifactId>cargo-maven3-plugin</artifactId>
+        <version>${cargo.version}</version>
+        <configuration>
+          <configuration>
+            <properties>
+              <cargo.servlet.port>${cargo.servlet.port}</cargo.servlet.port>
+              <cargo.jvmargs>${cargo.jvmargs}</cargo.jvmargs>
+            </properties>
+          </configuration>
+          <deployables>
+            <deployable>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>${project.artifactId}</artifactId>
+              <properties>
+                <context>/${MCR.AppName}</context>
+              </properties>
+            </deployable>
+          </deployables>
+        </configuration>
       </plugin>
       <plugin>
         <!-- https://github.com/cleydyr/dart-sass-maven-plugin -->

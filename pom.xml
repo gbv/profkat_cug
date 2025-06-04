@@ -171,6 +171,50 @@
   </pluginRepositories>
   <profiles>
     <profile>
+      <id>tomcat</id>
+      <activation>
+        <property>
+          <name>tomcat</name>
+        </property>
+      </activation>
+      <properties>
+        <cargo.container>tomcat${tomcat}x</cargo.container>
+      </properties>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.codehaus.cargo</groupId>
+              <artifactId>cargo-maven3-plugin</artifactId>
+              <configuration>
+                <container>
+                  <containerId>${cargo.container}</containerId>
+                  <artifactInstaller>
+                    <groupId>org.apache.tomcat</groupId>
+                    <artifactId>tomcat</artifactId>
+                    <version>${tomcat.version}</version>
+                    <type>tar.gz</type>
+                  </artifactInstaller>
+                </container>
+                <configuration>
+                  <home>${project.build.directory}/catalina-base</home>
+                  <properties>
+                    <cargo.rmi.port>${cargo.rmi.port}</cargo.rmi.port>
+                    <cargo.servlet.port>${cargo.servlet.port}</cargo.servlet.port>
+                    <cargo.tomcat.ajp.port>${cargo.tomcat.ajp.port}</cargo.tomcat.ajp.port>
+                    <cargo.tomcat.uriencoding>UTF-8</cargo.tomcat.uriencoding>
+                    <cargo.tomcat.connector.maxHttpHeaderSize>${cargo.tomcat.connector.maxHttpHeaderSize}</cargo.tomcat.connector.maxHttpHeaderSize>
+                    <!-- fixes IIIF identifier encoding issues -->
+                    <cargo.start.jvmargs>-Dorg.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH=true ${cargo.start.jvmargs}</cargo.start.jvmargs>
+                  </properties>
+                </configuration>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+    <profile>
       <id>release-profile</id>
       <properties>
         <site.suffix>-${project.version}</site.suffix>

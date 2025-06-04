@@ -17,5 +17,6 @@ Hier entsteht ein Anwendungsmodul für den auf MyCoRe basierenden [Professorenka
 * Go to profkat_cug-webapp
 * Install solr with the command: `mvn solr-runner:copyHome`
 * Run solr with the command `mvn solr-runner:start` (End with `mvn solr-runner:stop`)
-* Run Jetty with the command: `mvn jetty:run` (End with ctrl+c)
-* Fast rebuild and Jetty restart `mvn clean install && cd profkat_cug-module && mvn jetty:run` (End with ctrl+c)
+* Go back to profkat_cug `cd ..`
+* Run Tomcat with the command: `mvn cargo:run -Dtomcat=10 -pl profkat_cug-webapp` (End with ctrl+c)
+* Fast rebuild and Tomcat restart `mvn clean install && mvn cargo:run -Dtomcat=10 -pl profkat_cug-webapp` (End with ctrl+c)
