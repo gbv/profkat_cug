@@ -6,28 +6,36 @@
   	<category ID="none">
     	<label xml:lang="de" text="nicht zugewiesen" />
     </category>
-    <category ID="profkat_sample">
-      <label xml:lang="de" text="Epochen an der Beispieluniversität" />
-      <category ID="profkat_sample.1800-1918">
-        <label xml:lang="de" text="1800-1918" description="von der Gründung bis zum Ende des Ersten Weltkrieges" />
-        <label xml:lang="x-period" text="1800TO1918" />
+    <category ID="cug.epochs">
+      <label xml:lang="de" text="Epochen an der Universität Göttingen" />
+      <category ID="cug.epochs.1737-1786">
+        <label xml:lang="de" text="1737-1786" description="von der Gründung bis zum ..." />
+        <label xml:lang="x-period" text="1737TO1786" />
       </category>
-      <category ID="profkat_sample.1918-1933">
-        <label xml:lang="de" text="1918-1933" description="Zeit der Weimarer Republik" />
-        <label xml:lang="x-period" text="1918TO1933" />
+      <category ID="cug.epochs.1787-1865">
+        <label xml:lang="de" text="1787-1865" description="von ... bis zum ..." />
+        <label xml:lang="x-period" text="1787TO1865" />
       </category>
-      <category ID="profkat_sample.1933-1945">
-        <label xml:lang="de" text="1933-1945" description="Zeit des Dritten Reiches" />
-        <label xml:lang="x-period" text="1933TO1945" />
+      <category ID="cug.epochs.1866-1932">
+        <label xml:lang="de" text="1866-1932" description="von ... bis zum Beginn des Dritten Reiches" />
+        <label xml:lang="x-period" text="1866TO1932" />
        </category>
-      <category ID="profkat_sample.1945-1990">
-        <label xml:lang="de" text="1945-1990" description="DDR-Zeit" />
-        <label xml:lang="x-period" text="1945TO1990" /> 
+      <category ID="cug.epochs.1933-1945">
+        <label xml:lang="de" text="1933-1945" description="Zeit des Dritten Reiches" />
+        <label xml:lang="x-period" text="1933TO1945" /> 
       </category>
-      <category ID="profkat_sample.1990-heute">
-        <label xml:lang="de" text="1990-heute" description="aktuelle Zeit" />
-         <label xml:lang="x-period" text="1990TO2999" />
+	  <category ID="cug.epochs.1946-1977">
+        <label xml:lang="de" text="1946-1977" description="vom Ende des zweiten Weltkrieges bis ..." />
+        <label xml:lang="x-period" text="1946TO1977" /> 
       </category>
+	  <category ID="cug.epochs.1978-2003">
+        <label xml:lang="de" text="1978-2003" description="von ... bis zum ..." />
+        <label xml:lang="x-period" text="1978TO2003" /> 
+      </category>
+      <category ID="cug.epochs.2003-heute">
+        <label xml:lang="de" text="2003-heute" description="aktuelle Zeit" />
+         <label xml:lang="x-period" text="2003TO2999" />
+      </category> 
     </category>
   </categories>
 </mycoreclass>

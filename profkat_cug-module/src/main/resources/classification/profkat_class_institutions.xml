@@ -3,50 +3,100 @@
   xmlns:xlink="http://www.w3.org/1999/xlink" xsi:noNamespaceSchemaLocation="MCRClassification.xsd"
   ID="profkat_class_institutions">
   <label xml:lang="de" text="Historische Gliederungseinheiten"
-    description="Historische Organisationsstruktur der Beispieluniversität" />
+    description="Historische Organisationsstruktur der Universität Göttingen" />
   <label xml:lang="x-de-short" text="Historische Gliederungseinheiten"
     description="Historische Organisationsstruktur" />
   <categories>
-    <category ID="profkat_sample.0">
-      <label xml:lang="de" text="Beispieluniversität" />
-      <label xml:lang="x-de-short" text="Beispieluniversität" />
-      <category ID="profkat_sample.01">
+    <category ID="cug.institution.0">
+      <label xml:lang="de" text="Universität Göttingen" />
+      <label xml:lang="x-de-short" text="Universität Göttingen" />
+      <category ID="cug.institution.01">
         <label xml:lang="de" text="Medizinische Fakultät" />
         <label xml:lang="x-de-short" text="Medizinische Fakultät" />
       </category>
-      <category ID="profkat_sample.02">
-        <label xml:lang="de" text="Philosophische Fakultät" />
-        <label xml:lang="x-de-short" text="Philosophische Fakultät" />
+      <category ID="cug.institution.02">
+        <label xml:lang="de" text="Juristische Fakultät" />
+        <label xml:lang="x-de-short" text="Juristische Fakultät" />
       </category>
-      <category ID="profkat_sample.03">
+      <category ID="cug.institution.03">
+        <label xml:lang="de" text="Rechts- und Staatswissenschaftliche Fakultät" />
+        <label xml:lang="x-de-short" text="Rechts- und Staatswissenschaftliche Fakultät" />
+      </category>
+      <category ID="cug.institution.04">
         <label xml:lang="de" text="Theologische Fakultät" />
         <label xml:lang="x-de-short" text="Theologische Fakultät" />
       </category>
-      <category ID="profkat_sample.04">
+	  <category ID="cug.institution.05">
+        <label xml:lang="de" text="Philosophische Fakultät" />
+        <label xml:lang="x-de-short" text="Philosophische Fakultät" />
+      </category>
+	  <category ID="cug.institution.06">
         <label xml:lang="de" text="Mathematisch-Naturwissenschaftliche Fakultät" />
         <label xml:lang="x-de-short" text="Mathematisch-Naturwissenschaftliche Fakultät" />
-        <category ID="profkat_sample.04.010">
-          <label xml:lang="de" text="Sektion Mathematik (1968-1990)" />
-          <label xml:lang="x-de-short" text="Sektion Mathematik" />
-        </category>
-        <category ID="profkat_sample.04.020">
-          <label xml:lang="de" text="Sektion Chemie (1968-1990)" />
-          <label xml:lang="x-de-short" text="Sektion Chemie" />
-        </category>
-        <category ID="profkat_sample.04.030">
-          <label xml:lang="de" text="Sektion Biologie (1968-1990)" />
-          <label xml:lang="x-de-short" text="Sektion Biologie" />
-        </category>
-        <category ID="profkat_sample.04.040">
-          <label xml:lang="de" text="Sektion Physik (1968-1990)" />
-          <label xml:lang="x-de-short" text="Sektion Physik" />
-        </category>
       </category>
-      <category ID="profkat_sample.09">
+	  <category ID="cug.institution.07">
+        <label xml:lang="de" text="Fakultät für Mathematik" />
+        <label xml:lang="x-de-short" text="Fakultät für Mathematik" />
+      </category>
+	  <category ID="cug.institution.08">
+        <label xml:lang="de" text="Fakultät für Biologie" />
+        <label xml:lang="x-de-short" text="Fakultät für Biologie" />
+      </category>
+	  <category ID="cug.institution.09">
+        <label xml:lang="de" text="Fakultät für Biologie und Psychologie" />
+        <label xml:lang="x-de-short" text="Fakultät für Biologie und Psychologie" />
+      </category>
+	  <category ID="cug.institution.10">
+        <label xml:lang="de" text="Fakultät für Chemie" />
+        <label xml:lang="x-de-short" text="Fakultät für Chemie" />
+      </category>
+	  <category ID="cug.institution.11">
+        <label xml:lang="de" text="Fakultät für Physik" />
+        <label xml:lang="x-de-short" text="Fakultät für Physik" />
+      </category>
+	  <category ID="cug.institution.12">
+        <label xml:lang="de" text="Forstliche Fakultät" />
+        <label xml:lang="x-de-short" text="Forstliche Fakultät" />
+      </category>
+	  <category ID="cug.institution.13">
+        <label xml:lang="de" text="Fakultät für Forstwissenschaften und Waldökologie" />
+        <label xml:lang="x-de-short" text="Fakultät für Forstwissenschaften und Waldökologie" />
+      </category>
+	  <category ID="cug.institution.14">
+        <label xml:lang="de" text="Fakultät für Agrarwissenschaften" />
+        <label xml:lang="x-de-short" text="Fakultät für Agrarwissenschaften" />
+      </category>
+	  <category ID="cug.institution.15">
+        <label xml:lang="de" text="Wirtschafts- und Sozialwissenschaftliche Fakultät" />
+        <label xml:lang="x-de-short" text="Wirtschafts- und Sozialwissenschaftliche Fakultät" />
+      </category>
+	  <category ID="cug.institution.16">
+        <label xml:lang="de" text="Fachbereich Wirtschaftswissenschaften" />
+        <label xml:lang="x-de-short" text="Fachbereich Wirtschaftswissenschaften" />
+      </category>
+	  <category ID="cug.institution.17">
+        <label xml:lang="de" text="Wirtschaftswissenschaftliche Fakultät" />
+        <label xml:lang="x-de-short" text="Wirtschaftswissenschaftliche Fakultät" />
+      </category>
+	  <category ID="cug.institution.18">
+        <label xml:lang="de" text="Fachbereich Sozialwissenschaften" />
+        <label xml:lang="x-de-short" text="Fachbereich Sozialwissenschaften" />
+      </category>
+	  <category ID="cug.institution.19">
+        <label xml:lang="de" text="Sozialwissenschaftliche Fakultät" />
+        <label xml:lang="x-de-short" text="Sozialwissenschaftliche Fakultät" />
+      </category>
+	  <category ID="cug.institution.20">
+        <label xml:lang="de" text="Fakultät für Geowissenschaften und Geographie" />
+        <label xml:lang="x-de-short" text="Fakultät für Geowissenschaften und Geographie" />
+      </category>
+      <category ID="cug.institution.21">
         <label xml:lang="de" text="Sonstige" />
         <label xml:lang="x-de-short" text="Sonstige" />
       </category>
+	  <category ID="profkat_sample.02"><label xml:lang="de" text="Philosophische Fakultät" /><label xml:lang="x-de-short" text="Philosophische Fakultät" /></category>
+	  <category ID="profkat_sample.04"><label xml:lang="de" text="Mathematisch-Naturwissenschaftliche Fakultät" /><label xml:lang="x-de-short" text="Mathematisch-Naturwissenschaftliche Fakultät" />
+	  </category>
     </category>
-
   </categories>
 </mycoreclass>

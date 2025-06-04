@@ -8,10 +8,13 @@
 		<category ID="none">
     		<label xml:lang="de" text="nicht zugewiesen" />
     	</category>
-		<category ID="profkat_sample.professor">
-			<label xml:lang="de" text="Professor an der Beispieluniversität" />
+		<category ID="cug.professor">
+			<label xml:lang="de" text="Professor*in an der Universität Göttingen" />
 		</category>
-		<category ID="profkat_sample.other">
+		<category ID="cug.student">
+			<label xml:lang="de" text="Student*in an der Universität Göttingen" />
+		</category>
+		<category ID="cug.other">
 			<label xml:lang="de" text="Weitere Person" />
 		</category>
 	</categories>
