@@ -3,7 +3,7 @@
 @import "project/_variables";
 
 // current stable bootstrap version
-@import "bootstrap/4.6.1/scss/bootstrap";
+@import "../webjars/bootstrap/4.6.1/scss/bootstrap";
 
 // profkat_sample specific styles
 @import "project/_base";
