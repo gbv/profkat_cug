@@ -1,0 +1,12 @@
+// override bootstrap sass variables specified here:
+// http://getbootstrap.com/customize/#less-variables
+@import "project/_variables";
+
+// current stable bootstrap version
+@import "bootstrap/4.6.1/scss/bootstrap";
+
+// profkat_sample specific styles
+@import "project/_base";
+@import "project/_fonts";
+@import "project/_footer";
+@import "project/_navigation";

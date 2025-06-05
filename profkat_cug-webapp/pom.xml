@@ -88,25 +88,6 @@
           </deployables>
         </configuration>
       </plugin>
-      <plugin>
-        <!-- https://github.com/cleydyr/dart-sass-maven-plugin -->
-        <!-- Converts the SCSS files to CSS -->
-        <groupId>io.github.cleydyr</groupId>
-        <artifactId>dart-sass-maven-plugin</artifactId>
-        <version>0.1.0</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>compile-sass</goal>
-            </goals>
-            <configuration>
-              <inputFolder>${basedir}/src/main/scss</inputFolder>
-              <outputFolder>${project.build.directory}/${project.build.finalName}/css/</outputFolder>
-              <loadPaths>${project.build.directory}/scss-dependency-sources/META-INF/resources/webjars</loadPaths>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
   </build>
   <dependencies>
