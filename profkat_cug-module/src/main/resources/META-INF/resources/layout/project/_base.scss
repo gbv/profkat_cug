@@ -1,0 +1,18 @@
+/* ---------------------------------------------------------------------------
+   base functions
+----------------------------------------------------------------------------*/
+a.mcr-upload-show{
+	color: $primary !important;
+}
+
+
+span.docdetails-label, span.docdetails-sublabel {
+  font-variant: petite-caps;
+  letter-spacing: 0.025em;
+  word-spacing: 0.2em;
+  margin-left: 0em;
+}
+
+#content_area{
+  min-height: calc(100vh - 255px);
+}

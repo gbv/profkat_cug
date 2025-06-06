@@ -1,0 +1,67 @@
+/*
+ *  header settings
+ */
+
+// Extra large devices (large desktops)
+// set the defaults for all responsive levels here
+// no (xl) media query necessary (desktop first)
+
+.ir-nav-top {
+  background-color: #13306a;
+  color: var(--white);
+}
+
+.ir-nav-top .navbar{
+  padding:0;
+}
+
+.ir-nav-top a{
+  color: var(--white);
+}
+
+.ir-nav-main .level-0{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.ir-nav-main a.active{
+  background-color:#13306a;
+}
+
+.ir-nav-side a.active{
+  background-color: lightcyan;
+}
+
+.ir-nav-side ul.level-1 > li{
+  font-weight:bold;
+}
+.ir-nav-side ul.level-2 > li{
+  font-weight:normal;
+}
+
+.ir-nav-side ul.level-2{
+  margin-left: 30px;
+}
+
+
+// Large devices (desktops) and below: <= 1200px
+@include media-breakpoint-down(lg) {
+  // add/overwrite styles for responsive level lg and lower
+}
+
+// Medium devices (tablets) and below: <= 992px
+@include media-breakpoint-down(md) {
+  // add/overwrite styles for responsive level md and lower
+}
+
+// Small devices (landscape phones) and below: <= 768px
+@include media-breakpoint-down(sm) {
+  // add/overwrite styles for responsive level sm and lower
+}
+
+// Extra small devices (portrait phones): <= 576px
+@include media-breakpoint-down(xs) {
+  // add/overwrite styles for responsive level xs
+  .head-bar {
+    height: auto; // need height for line wrap
+  }
+}

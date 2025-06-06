@@ -16,5 +16,5 @@
     <mcr:webjarLocator htmlElement="stylesheet" project="font-awesome" file="all.min.css" />
 
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/profkat.css" />
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap-profkat_sample.css" />
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/profkat_sample.css" />
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/rsc/sass/layout/bootstrap-profkat_sample.css" />
+
