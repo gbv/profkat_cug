@@ -1,6 +1,7 @@
 reload solr configuration main in core main
 reload solr configuration classification in core classification
 update classification from uri resource:classification/mcr-roles.xml
+update classification from uri resource:classification/profkat_class_departures.xml
 update classification from uri resource:classification/profkat_class_epochs.xml
 update classification from uri resource:classification/profkat_class_institutions.xml
 update classification from uri resource:classification/profkat_class_persontypes.xml
