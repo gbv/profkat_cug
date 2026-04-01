@@ -10,5 +10,10 @@ update classification from uri resource:classification/profkat_class_subjects.xm
 update classification from uri resource:config/profkat-base/classification/derivate_types.xml
 update classification from uri resource:config/profkat-base/classification/state.xml
 init superuser
+assign user administrator to role adminuser
+assign user administrator to role adminwebcontent
+assign user administrator to role edit
+assign user administrator to role restapi
+assign user administrator to role wf_edit_profkat-person
 deploy workflow processdefinition from resource config/workflow/processdefinitions/create_object_simple.bpmn20.xml
 rebuild solr classification index in core classification
