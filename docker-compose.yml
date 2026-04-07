@@ -9,6 +9,7 @@ services:
       - POSTGRES_DB=cug
     volumes:
       - ${DB_DATA}:/var/lib/postgresql/data/
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     ports:
       - ${DB_PORT}:5432
   solr:
@@ -42,6 +43,7 @@ services:
       - JDBC_PASSWORD=${DB_PASSWORD}
       - JDBC_DRIVER=org.postgresql.Driver
       - JDBC_URL=jdbc:postgresql://db:5432/cug
+      - HIBERNATE_SCHEMA=cug
       - SOLR_URL=http://solr:8983
       - SOLR_CORE=cug
       - SOLR_CLASSIFICATION_CORE=cug-classifications
