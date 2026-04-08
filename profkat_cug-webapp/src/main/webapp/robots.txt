@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /*left.browse*
+Disallow: /*left.search*
+Disallow: /*left.indexsearch*
+Disallow: /*print_details*
+Disallow: /*left.collections.cug.*
+Disallow: /zip?*
+Disallow: /*cug_derivate_*
+
+Disallow: /classbrowser/*
+Disallow: /profkat_beacon_data
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
