@@ -17,13 +17,13 @@
             </a>
           </li>
           <li id="topnav_login" class="nav-item userinfo">
-            <a href="${WebApplicationBaseURL}do/login" class="nav-link">
+            <span class="nav-link">
               <fmt:message key="Webpage.login.User" />:
               &#160;
               <span class="username">
                 ${username}
               </span>
-            </a>
+            </span>
           </li>
           <li id="topnav_logout" class="nav-item">
             <a class="nav-link" href="${WebApplicationBaseURL}do/login?logout=true">
