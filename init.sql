@@ -1,0 +1,2 @@
+CREATE SCHEMA cug;
+CREATE SCHEMA cug_bpm;
