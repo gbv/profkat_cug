@@ -311,13 +311,17 @@
 
         <xsl:call-template name="dd_separator" />
 
-        <xsl:if test="./metadata/box.biographic/biographic">
+        <!-- BEGIN cug adjustments -->
+        <xsl:if test="./metadata/box.biographic/biographic/text">
+          <!-- END cug adjustments -->
           <xsl:call-template name="dd_block">
             <xsl:with-param name="key" select="'biographic'"/>
             <xsl:with-param name="labelkey" select="'OMD.profkat.biographics'"/>
             <xsl:with-param name="css_class" select="'col2'"/>
             <xsl:with-param name="items">
-              <xsl:for-each select="./metadata/box.biographic/biographic">
+              <!-- BEGIN cug adjustments -->
+              <xsl:for-each select="./metadata/box.biographic/biographic[text]">
+                <!-- END cug adjustments -->
                 <tr>
                   <td><xsl:if test="not(./time='#')">{./time}</xsl:if></td>
                   <td><xsl:value-of select="./text" /></td>
