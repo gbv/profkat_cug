@@ -7,9 +7,17 @@
   xmlns:xed="http://www.mycore.de/xeditor">
 
   <xed:post-processor xsl="editor-person-postprocessor.xsl" />
-  <xed:include id="cleanup-rules" />
+
+  <xed:cleanup-rule xpath="//*" relevant-if="true()" />
+  <xed:cleanup-rule xpath="//*[@class='MCRMetaHistoryEvent']/*/text" relevant-if="string-length(text()) &gt; 0" />
+  <xed:cleanup-rule xpath="/mycoreobject/metadata//*" relevant-if="@* or * or (string-length(text()) &gt; 0)" />
+  <xed:cleanup-rule xpath="//*[@class='MCRMetaXML']/*" relevant-if=".//*[@* or (string-length(text()) &gt; 0)]" />
+  <xed:cleanup-rule xpath="//*[@class='MCRMetaLangText']/*" relevant-if="string-length(text()) &gt; 0" />
+  <xed:cleanup-rule xpath="//*[@class='MCRMetaLink']/*" relevant-if="string-length(@xlink:href) &gt; 0" />
+  <xed:cleanup-rule xpath="/mycoreobject/metadata/*" relevant-if="./*" />
 
   <xed:include uri="resource:editor/metadata/includes-generic.xed" ref="in.out" />
+
   <xed:bind xpath="/mycoreobject">
     <xed:include uri="resource:editor/metadata/includes-generic.xed" ref="mycore.common" />
     <xed:bind xpath="metadata">
@@ -19,27 +27,37 @@
           <xed:output i18n="Editor.Common.headline" />
         </label>
       </div>
-      <xed:include ref="person" />
+      <xed:choose>
+        <xed:when test="starts-with(/mycoreobject/@ID,'cug_matrikel')">
+          <xed:include ref="matrikel" />
+        </xed:when>
+        <xed:otherwise>
+          <xed:include ref="person" />
+        </xed:otherwise>
+      </xed:choose>
     </xed:bind>
     <xed:include uri="resource:editor/metadata/includes-generic.xed" ref="cancel.submit" />
   </xed:bind>
 
   <xed:template id="matrikel">
-    <xed:include uri="resource:editor/metadata/matrikel-editor-includes.xed" ref="semester" />
-    <xed:include uri="resource:editor/metadata/matrikel-editor-includes.xed" ref="enrollment-date" />
-    <xed:include uri="resource:editor/metadata/matrikel-editor-includes.xed" ref="enrollment-number" />
-    <xed:include uri="resource:editor/metadata/matrikel-editor-includes.xed" ref="enrollment-sequence-number" />
-    <xed:include uri="resource:editor/metadata/matrikel-editor-includes.xed" ref="name-group" />
-    <xed:include uri="resource:editor/metadata/matrikel-editor-includes.xed" ref="hometown" />
-    <xed:include uri="resource:editor/metadata/matrikel-editor-includes.xed" ref="course-of-study" />
-    <xed:include uri="resource:editor/metadata/matrikel-editor-includes.xed" ref="prior-enrollment" />
-    <xed:include uri="resource:editor/metadata/matrikel-editor-includes.xed" ref="prior-matriculation" />
-    <xed:include uri="resource:editor/metadata/matrikel-editor-includes.xed" ref="status" />
-    <xed:include uri="resource:editor/metadata/matrikel-editor-includes.xed" ref="academic-titles" />
-    <xed:include uri="resource:editor/metadata/matrikel-editor-includes.xed" ref="occupation" />
-    <xed:include uri="resource:editor/metadata/matrikel-editor-includes.xed" ref="guardian" />
-    <xed:include uri="resource:editor/metadata/matrikel-editor-includes.xed" ref="diploma" />
+    <xed:include uri="resource:editor/metadata/person-editor-includes.xed" ref="state" />
+    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="semester" />
+    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="enrollment-date" />
+    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="enrollment-number" />
+    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="enrollment-sequence-number" />
+    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="name" />
+    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="origin" />
+    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="field-of-study" />
+    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="prior-enrollment" />
+    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="prior-matriculation" />
+    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="fee" />
+    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="occupation" />
+    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="guardian" />
+    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="diploma" />
     <xed:include uri="resource:editor/metadata/person-editor-includes.xed" ref="other-infos" />
+    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="source" />
+
+    <xed:cleanup-rule xpath="//*[@class='MCRMetaXML']/*" relevant-if="./*" />
   </xed:template>
 
   <xed:template id="person">
@@ -79,16 +97,6 @@
     <xed:include uri="resource:editor/metadata/person-editor-includes.xed" ref="other-infos" />
     <xed:include uri="resource:editor/metadata/person-editor-includes.xed" ref="internal-infos" />
     <xed:include uri="resource:editor/metadata/person-editor-includes.xed" ref="gnd-check" />
-  </xed:template>
-
-  <xed:template id="cleanup-rules">
-    <xed:cleanup-rule xpath="//*" relevant-if="true()" />
-    <xed:cleanup-rule xpath="//*[@class='MCRMetaHistoryEvent']/*/text" relevant-if="string-length(text()) &gt; 0" />
-    <xed:cleanup-rule xpath="/mycoreobject/metadata//*" relevant-if="@* or * or (string-length(text()) &gt; 0)" />
-    <xed:cleanup-rule xpath="//*[@class='MCRMetaXML']/*" relevant-if=".//*[@* or (string-length(text()) &gt; 0)]" />
-    <xed:cleanup-rule xpath="//*[@class='MCRMetaLangText']/*" relevant-if="string-length(text()) &gt; 0" />
-    <xed:cleanup-rule xpath="//*[@class='MCRMetaLink']/*" relevant-if="string-length(@xlink:href) &gt; 0" />
-    <xed:cleanup-rule xpath="/mycoreobject/metadata/*" relevant-if=" ./*" />
   </xed:template>
 
 </xed:form>

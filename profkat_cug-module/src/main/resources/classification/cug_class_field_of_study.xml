@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass ID="cug_class_field_of_study"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="MCRClassification.xsd">
+  <label xml:lang="de" text="Studienfach" description="Historisches Studienfach an der Universität Göttingen" />
+  <label xml:lang="en" text="Field of Study" description="Historical field of study at the University of Göttingen" />
+  <categories>
+    <category ID="cug_agricultural_sciences">
+      <label xml:lang="de" text="Agrarwissenschaften" />
+      <label xml:lang="en" text="Agricultural Sciences" />
+    </category>
+    <category ID="cug_archaeology">
+      <label xml:lang="de" text="Archäologie" />
+      <label xml:lang="en" text="Archaeology" />
+    </category>
+    <category ID="cug_architecture">
+      <label xml:lang="de" text="Architektur" />
+      <label xml:lang="en" text="Architecture" />
+    </category>
+    <category ID="cug_astronomy">
+      <label xml:lang="de" text="Astronomie" />
+      <label xml:lang="en" text="Astronomy" />
+    </category>
+    <category ID="cug_botany">
+      <label xml:lang="de" text="Botanik" />
+      <label xml:lang="en" text="Botany" />
+    </category>
+    <category ID="cug_building_sciences">
+      <label xml:lang="de" text="Bauwissenschaften" />
+      <label xml:lang="en" text="Building Sciences" />
+    </category>
+    <category ID="cug_cameral_sciences">
+      <label xml:lang="de" text="Kameralwissenschaften" />
+      <label xml:lang="en" text="Cameral Sciences" />
+    </category>
+    <category ID="cug_chemistry">
+      <label xml:lang="de" text="Chemie" />
+      <label xml:lang="en" text="Chemistry" />
+    </category>
+    <category ID="cug_diplomacy">
+      <label xml:lang="de" text="Diplomatie" />
+      <label xml:lang="en" text="Diplomacy" />
+    </category>
+    <category ID="cug_economics">
+      <label xml:lang="de" text="Ökonomie" />
+      <label xml:lang="en" text="Economics" />
+    </category>
+    <category ID="cug_educational_sciences">
+      <label xml:lang="de" text="Erziehungswissenschaften" />
+      <label xml:lang="en" text="Educational Sciences" />
+    </category>
+    <category ID="cug_equestrian_arts">
+      <label xml:lang="de" text="Reitkunst" />
+      <label xml:lang="en" text="Equestrian Arts" />
+    </category>
+    <category ID="cug_fencing">
+      <label xml:lang="de" text="Fechtkunst" />
+      <label xml:lang="en" text="Art of Fencing" />
+    </category>
+    <category ID="cug_forestry">
+      <label xml:lang="de" text="Forstwissenschaften" />
+      <label xml:lang="en" text="Forestry" />
+    </category>
+    <category ID="cug_german_studies">
+      <label xml:lang="de" text="Germanistik" />
+      <label xml:lang="en" text="German Studies" />
+    </category>
+    <category ID="cug_historical_sciences">
+      <label xml:lang="de" text="Geschichtswissenschaften" />
+      <label xml:lang="en" text="Historical Sciences" />
+    </category>
+    <category ID="cug_history">
+      <label xml:lang="de" text="Geschichte" />
+      <label xml:lang="en" text="History" />
+    </category>
+    <category ID="cug_humanities">
+      <label xml:lang="de" text="Geisteswissenschaften" />
+      <label xml:lang="en" text="Humanities" />
+    </category>
+    <category ID="cug_hunting_sciences">
+      <label xml:lang="de" text="Jagdwissenschaften" />
+      <label xml:lang="en" text="Hunting Sciences" />
+    </category>
+    <category ID="cug_jurisprudence">
+      <label xml:lang="de" text="Rechtswissenschaften" />
+      <label xml:lang="en" text="Jurisprudence" />
+    </category>
+    <category ID="cug_liberal_arts">
+      <label xml:lang="de" text="Freie Künste" />
+      <label xml:lang="en" text="Liberal Arts" />
+    </category>
+    <category ID="cug_linguistics">
+      <label xml:lang="de" text="Sprachwissenschaften" />
+      <label xml:lang="en" text="Linguistics" />
+    </category>
+    <category ID="cug_linguistics_lectureship">
+      <label xml:lang="de" text="Sprachwissenschaften (Lektorat)" />
+      <label xml:lang="en" text="Linguistics (Lectureship)" />
+    </category>
+    <category ID="cug_literature">
+      <label xml:lang="de" text="Literatur" />
+      <label xml:lang="en" text="Literature" />
+    </category>
+    <category ID="cug_mathematics">
+      <label xml:lang="de" text="Mathematik" />
+      <label xml:lang="en" text="Mathematics" />
+    </category>
+    <category ID="cug_mechanics">
+      <label xml:lang="de" text="Mechanik" />
+      <label xml:lang="en" text="Mechanics" />
+    </category>
+    <category ID="cug_medicine">
+      <label xml:lang="de" text="Medizin" />
+      <label xml:lang="en" text="Medicine" />
+    </category>
+    <category ID="cug_midwifery">
+      <label xml:lang="de" text="Hebammenwissenschaften" />
+      <label xml:lang="en" text="Midwifery" />
+    </category>
+    <category ID="cug_military_science">
+      <label xml:lang="de" text="Militärwissenschaften" />
+      <label xml:lang="en" text="Military Science" />
+    </category>
+    <category ID="cug_mineralogy">
+      <label xml:lang="de" text="Mineralogie" />
+      <label xml:lang="en" text="Mineralogy" />
+    </category>
+    <category ID="cug_mining_sciences">
+      <label xml:lang="de" text="Bergbauwissenschaften" />
+      <label xml:lang="en" text="Mining Sciences" />
+    </category>
+    <category ID="cug_musicology">
+      <label xml:lang="de" text="Musikwissenschaften" />
+      <label xml:lang="en" text="Musicology" />
+    </category>
+    <category ID="cug_natural_sciences">
+      <label xml:lang="de" text="Naturwissenschaften" />
+      <label xml:lang="en" text="Natural Sciences" />
+    </category>
+    <category ID="cug_painting">
+      <label xml:lang="de" text="Malerei" />
+      <label xml:lang="en" text="Painting" />
+    </category>
+    <category ID="cug_pedagogy">
+      <label xml:lang="de" text="Pädagogik" />
+      <label xml:lang="en" text="Pedagogy" />
+    </category>
+    <category ID="cug_perspective">
+      <label xml:lang="de" text="Perspektive" />
+      <label xml:lang="en" text="Perspective" />
+    </category>
+    <category ID="cug_pharmacy">
+      <label xml:lang="de" text="Pharmazie" />
+      <label xml:lang="en" text="Pharmacy" />
+    </category>
+    <category ID="cug_philology">
+      <label xml:lang="de" text="Philologie" />
+      <label xml:lang="en" text="Philology" />
+    </category>
+    <category ID="cug_philosophy">
+      <label xml:lang="de" text="Philosophie" />
+      <label xml:lang="en" text="Philosophy" />
+    </category>
+    <category ID="cug_physics">
+      <label xml:lang="de" text="Physik" />
+      <label xml:lang="en" text="Physics" />
+    </category>
+    <category ID="cug_political_science">
+      <label xml:lang="de" text="Politikwissenschaften" />
+      <label xml:lang="en" text="Political Science" />
+    </category>
+    <category ID="cug_polite_literature_and_fine_arts">
+      <label xml:lang="de" text="Schöne Wissenschaften" />
+      <label xml:lang="en" text="Polite Literature and Fine Arts" />
+    </category>
+    <category ID="cug_rabbinic_philology">
+      <label xml:lang="de" text="Philologie (Rabbinisch)" />
+      <label xml:lang="en" text="Rabbinic Philology" />
+    </category>
+    <category ID="cug_state_sciences">
+      <label xml:lang="de" text="Staatswissenschaften" />
+      <label xml:lang="en" text="State Sciences" />
+    </category>
+    <category ID="cug_statistics">
+      <label xml:lang="de" text="Statistik" />
+      <label xml:lang="en" text="Statistics" />
+    </category>
+    <category ID="cug_technology">
+      <label xml:lang="de" text="Technologie" />
+      <label xml:lang="en" text="Technology" />
+    </category>
+    <category ID="cug_theology">
+      <label xml:lang="de" text="Theologie" />
+      <label xml:lang="en" text="Theology" />
+    </category>
+    <category ID="cug_veterinary_medicine">
+      <label xml:lang="de" text="Tierarzneikunde" />
+      <label xml:lang="en" text="Veterinary Medicine" />
+    </category>
+    <category ID="cug_weltweisheit">
+      <label xml:lang="de" text="Weltweisheit" />
+      <label xml:lang="en" text="Philosophy" />
+    </category>
+  </categories>
+</mycoreclass>
