@@ -1620,7 +1620,7 @@
   <xed:template id="other-infos">
     <xed:bind xpath="box.otherinfo[@class='MCRMetaLangText']">
       <div class="form-group row">
-        <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="otherinfo">
+        <label class="col-sm-2 col-form-label input-sm ir-editor-label">
           <xed:output i18n="OMD.profkat.otherinfos" />
         </label>
         <div class="col-sm-10">
@@ -1630,7 +1630,7 @@
                 <div class="row ir-editor-row">
                   <div class="offset-sm-2 col-sm-10">
                     <xed:bind xpath=".">
-                      <input id="otherinfo" type="text" class="form-control input-sm" />
+                      <input type="text" class="form-control input-sm" />
                     </xed:bind>
                   </div>
                 </div>
