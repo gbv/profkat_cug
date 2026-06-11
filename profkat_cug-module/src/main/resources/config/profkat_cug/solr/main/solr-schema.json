@@ -1,0 +1,146 @@
+[
+  {
+    "add-field": {
+      "name": "cug.matrikel.field_of_study",
+      "type": "text_de",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "cug.matrikel.diploma",
+      "type": "text_de",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "cug.matrikel.enrollment_date",
+      "type": "text_de",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "cug.matrikel.enrollment_number",
+      "type": "text_de",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "cug.matrikel.enrollment_sequence_number",
+      "type": "text_de",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "cug.matrikel.fee",
+      "type": "text_de",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "cug.matrikel.guardian",
+      "type": "text_de",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "cug.matrikel.name.facet",
+      "type": "string",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "cug.matrikel.name.full",
+      "type": "string",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "cug.matrikel.name.plain",
+      "type": "mcr_identifier",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "cug.matrikel.prior_enrollment",
+      "type": "text_de",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "cug.matrikel.prior_matriculation",
+      "type": "text_de",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "cug.matrikel.occupation",
+      "type": "text_de",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "cug.matrikel.origin",
+      "type": "text_de",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "cug.matrikel.other_info",
+      "type": "text_de",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "cug.matrikel.semester",
+      "type": "text_de",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "cug.matrikel.source",
+      "type": "text_de",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "cug.matrikel.status",
+      "type": "string",
+      "multiValued": false,
+      "stored": true
+    }
+  }
+]
