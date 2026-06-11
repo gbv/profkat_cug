@@ -6,6 +6,7 @@
   <navigation id="main">
     <navitem id="start" i18n="Nav.Start" href="" />
     <navitem id="indexbrowser_profname" i18n="Nav.Profkat.Index" href="do/indexbrowser/profname" />
+    <navitem id="indexbrowser_matname" i18n="cug.index.matrikel" href="do/indexbrowser/matname" />
     <navitem id="search" i18n="Nav.Profkat.Search" href="do/search/profkat-bar" />
     <navitem id="ueber_uns" i18n="Nav.Profkat.AboutUs" href="site/ueber_uns?info=info.kontakt" />
   </navigation>
