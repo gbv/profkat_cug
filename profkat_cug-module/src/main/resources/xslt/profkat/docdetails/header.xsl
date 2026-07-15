@@ -44,8 +44,8 @@
     </h2>
 
     <xsl:variable name="semester" select="(metadata/box.semester/semester)[1]" />
-    <xsl:variable name="field-of-study" select="(metadata/box.field-of-study/field-of-study)[1]" />
-    <xsl:if test="exists($semester) or exists($field-of-study)">
+    <xsl:variable name="fields-of-study" select="metadata/box.field-of-study/field-of-study" />
+    <xsl:if test="exists($semester) or exists($fields-of-study)">
       <xsl:call-template name="dd_block">
         <xsl:with-param name="key" select="'summary'" />
         <xsl:with-param name="showInfo" select="false()" />
@@ -57,9 +57,11 @@
                 <xsl:value-of select="mcri18n:translate('cug.since') || ' ' || mcrclass:current-label-text($semester)" />
               </td>
             </xsl:if>
-            <xsl:if test="$field-of-study">
+            <xsl:if test="exists($fields-of-study)">
               <td>
-                <xsl:value-of select="mcrclass:current-label-text($field-of-study)" />
+                <xsl:value-of select="
+                  string-join(for $f in $fields-of-study return mcrclass:current-label-text($f), ', ')
+                " />
               </td>
             </xsl:if>
           </tr>

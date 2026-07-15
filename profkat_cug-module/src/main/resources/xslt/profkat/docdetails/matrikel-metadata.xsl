@@ -94,18 +94,6 @@
     </xsl:if>
   </xsl:template>
 
-  <xsl:template name="display-field-of-study">
-    <xsl:if test="./metadata/box.field-of-study">
-      <xsl:call-template name="display-text">
-        <xsl:with-param name="key" select="'field-of-study'" />
-        <xsl:with-param name="label-key" select="'cug.fieldOfStudy'" />
-        <xsl:with-param name="text" select="
-          mcrclass:current-label-text(./metadata/box.field-of-study/field-of-study)
-        " />
-      </xsl:call-template>
-    </xsl:if>
-  </xsl:template>
-
   <xsl:template name="display-prior-enrollment">
     <xsl:if test="./metadata/box.prior-enrollment/prior-enrollment/text">
       <xsl:call-template name="dd_block">

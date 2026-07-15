@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xed:template xmlns:xed="http://www.mycore.de/xeditor">
 
-  <xed:template id="field-of-study">
+  <xed:template id="fields-of-study">
     <xed:bind xpath="box.field-of-study[@class='MCRMetaClassification']">
       <div class="form-group row">
         <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="fieldOfStudy">
-          <xed:output i18n="cug.fieldOfStudy" />
+          <xed:output i18n="cug.fieldsOfStudy" />
         </label>
         <div class="col-sm-10">
-          <xed:bind xpath="field-of-study[@classid='profkat_class_field_of_study']">
+          <xed:repeat xpath="field-of-study[@classid='profkat_class_field_of_study']">
             <xed:cleanup-rule xpath="//box.field-of-study/field-of-study" relevant-if="@categid" />
             <div class="row ir-editor-row ir-editor-row-1">
               <div class="col-sm-10">
@@ -22,9 +22,13 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-2"></div>
+              <div class="col-sm-2">
+                <div class="btn-group btn-group-sm pull-right">
+                  <xed:controls />
+                </div>
+              </div>
             </div>
-          </xed:bind>
+          </xed:repeat>
         </div>
       </div>
     </xed:bind>

@@ -67,14 +67,14 @@
       </field>
     </xsl:if>
     <xsl:if test="box.field-of-study/field-of-study">
-      <xsl:variable name="field" select="box.field-of-study/field-of-study" />
-      <field name="cug.matrikel.field_of_study">
-        <xsl:value-of select="
-          document(
-            concat('classification:metadata:0:children:', $field/@classid, ':', $field/@categid)
-          )//category/label[@xml:lang='de']/@text
-        " />
-      </field>
+      <xsl:for-each select="box.field-of-study/field-of-study">
+        <field name="cug.matrikel.field_of_study">
+          <xsl:value-of select="
+            document(concat('classification:metadata:0:children:', ./@classid, ':', ./@categid))
+              //category/label[@xml:lang='de']/@text
+          " />
+        </field>
+      </xsl:for-each>
     </xsl:if>
   </xsl:template>
 
