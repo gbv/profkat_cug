@@ -262,47 +262,58 @@
     </xed:bind>
   </xed:template>
 
-  <xed:template id="prior-enrollment">
+  <xed:template id="prior-enrollments">
     <xed:bind xpath="box.prior-enrollment[@class='MCRMetaXML']">
       <div class="form-group row">
         <label class="col-sm-2 col-form-label input-sm ir-editor-label">
-          <xed:output i18n="cug.priorEnrollment" />
+          <xed:output i18n="cug.priorEnrollments" />
         </label>
         <div class="col-sm-10">
-          <xed:bind xpath="prior-enrollment">
+          <xed:repeat xpath="prior-enrollment">
             <div class="row ir-editor-row ir-editor-row-1">
               <div class="col-sm-10">
                 <div class="row ir-editor-row">
-                  <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint" for="priorEnrollmentText">
-                    <xed:output i18n="OMD.profkat.hint.text" />
-                  </label>
                   <xed:bind xpath="text">
+                    <label
+                      class="col-sm-2 col-form-label input-sm ir-editor-label-hint"
+                      for="priorEnrollmentText_{xed:generate-id()}">
+                      <xed:output i18n="OMD.profkat.hint.text" />
+                    </label>
                     <div class="col-sm-10">
-                      <input id="priorEnrollmentText" type="text" class="form-control input-sm" />
+                      <input id="priorEnrollmentText_{xed:generate-id()}" type="text" class="form-control input-sm" />
                     </div>
                   </xed:bind>
                 </div>
                 <div class="row ir-editor-row">
-                  <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint" for="priorEnrollmentPlace">
-                    <xed:output i18n="OMD.profkat.hint.place" />
-                  </label>
                   <xed:bind xpath="place">
-                    <div class="col-sm-4">
-                      <input id="priorEnrollmentPlace" type="text" class="form-control input-sm" />
-                    </div>
-                    <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint" for="priorEnrollmentPlaceId">
-                      <xed:output i18n="OMD.profkat.hint.geoid" />
+                    <label
+                      class="col-sm-2 col-form-label input-sm ir-editor-label-hint"
+                      for="priorEnrollmentPlace_{xed:generate-id()}">
+                      <xed:output i18n="OMD.profkat.hint.place" />
                     </label>
+                    <div class="col-sm-4">
+                      <input id="priorEnrollmentPlace_{xed:generate-id()}" type="text" class="form-control input-sm" />
+                    </div>
                     <xed:bind xpath="@geoid">
+                      <label
+                        class="col-sm-2 col-form-label input-sm ir-editor-label-hint"
+                        for="priorEnrollmentPlaceId_{xed:generate-id()}">
+                        <xed:output i18n="OMD.profkat.hint.geoid" />
+                      </label>
                       <div class="col-sm-4">
-                        <input id="priorEnrollmentPlaceId" type="text" class="form-control input-sm" />
+                        <input id="priorEnrollmentPlaceId_{xed:generate-id()}" type="text" class="form-control input-sm" />
                       </div>
                     </xed:bind>
                   </xed:bind>
                 </div>
               </div>
+              <div class="col-sm-2">
+                <div class="btn-group btn-group-sm pull-right">
+                  <xed:controls />
+                </div>
+              </div>
             </div>
-          </xed:bind>
+          </xed:repeat>
         </div>
       </div>
     </xed:bind>

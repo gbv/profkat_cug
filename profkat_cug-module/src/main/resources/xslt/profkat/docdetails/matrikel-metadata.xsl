@@ -108,10 +108,16 @@
 
   <xsl:template name="display-prior-enrollment">
     <xsl:if test="./metadata/box.prior-enrollment/prior-enrollment/text">
-      <xsl:call-template name="display-text">
+      <xsl:call-template name="dd_block">
         <xsl:with-param name="key" select="'prior-enrollment'" />
-        <xsl:with-param name="label-key" select="'cug.priorEnrollment'" />
-        <xsl:with-param name="text" select="./metadata/box.prior-enrollment/prior-enrollment/text" />
+        <xsl:with-param name="labelkey" select="'cug.priorEnrollments'" />
+        <xsl:with-param name="items">
+          <xsl:for-each select="./metadata/box.prior-enrollment/prior-enrollment/text">
+            <tr>
+              <td><xsl:value-of select="." /></td>
+            </tr>
+          </xsl:for-each>
+        </xsl:with-param>
       </xsl:call-template>
     </xsl:if>
   </xsl:template>

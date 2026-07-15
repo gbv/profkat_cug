@@ -75,7 +75,7 @@
     "add-field": {
       "name": "cug.matrikel.prior_enrollment",
       "type": "text_de",
-      "multiValued": false,
+      "multiValued": true,
       "stored": true
     }
   },

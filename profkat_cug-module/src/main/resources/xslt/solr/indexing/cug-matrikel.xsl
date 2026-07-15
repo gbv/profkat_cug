@@ -25,7 +25,7 @@
     <xsl:call-template name="name" />
     <xsl:call-template name="occupation" />
     <xsl:call-template name="other-info" />
-    <xsl:call-template name="prior-enrollment" />
+    <xsl:call-template name="prior-enrollments" />
     <xsl:call-template name="prior-matriculation" />
     <xsl:call-template name="school-certificate" />
     <xsl:call-template name="source" />
@@ -176,12 +176,12 @@
     </xsl:if>
   </xsl:template>
 
-  <xsl:template name="prior-enrollment">
-    <xsl:if test="box.prior-enrollment/prior-enrollment/text">
+  <xsl:template name="prior-enrollments">
+    <xsl:for-each select="box.prior-enrollment/prior-enrollment/text">
       <field name="cug.matrikel.prior_enrollment">
-        <xsl:value-of select="box.prior-enrollment/prior-enrollment/text" />
+        <xsl:value-of select="." />
       </field>
-    </xsl:if>
+    </xsl:for-each>
   </xsl:template>
 
   <xsl:template name="prior-matriculation">

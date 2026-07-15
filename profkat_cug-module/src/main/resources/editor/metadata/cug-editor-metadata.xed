@@ -48,7 +48,7 @@
     <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="name" />
     <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="origin" />
     <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="field-of-study" />
-    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="prior-enrollment" />
+    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="prior-enrollments" />
     <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="prior-matriculation" />
     <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="fee" />
     <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="occupation" />
