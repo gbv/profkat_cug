@@ -107,6 +107,8 @@
     <xsl:variable name="firstname" select="($name/firstname)[1]" />
     <xsl:variable name="surname" select="($name/surname)[1]" />
     <xsl:variable name="academic" select="($name/academic)[1]" />
+    <xsl:variable name="prefix" select="($name/prefix)[1]" />
+    <xsl:variable name="title" select="normalize-space(concat($academic, ' ', $prefix))" />
 
     <xsl:for-each select="$surname | $firstname">
       <field name="profkat.name">
@@ -118,9 +120,9 @@
       <field name="profkat.name">
         <xsl:value-of select="concat($firstname, ' ', $surname)"/>
       </field>
-      <xsl:if test="$academic">
+      <xsl:if test="$title">
         <field name="profkat.name">
-          <xsl:value-of select="concat($academic, ' ', $firstname, ' ', $surname)"/>
+          <xsl:value-of select="concat($title, ' ', $firstname, ' ', $surname)"/>
         </field>
       </xsl:if>
     </xsl:if>
@@ -142,12 +144,12 @@
         <xsl:value-of select="solrutil:get-name-facet($surname)"/>
       </field>
       <field name="cug.matrikel.name.full">
-        <xsl:value-of select="
-          if ($academic and $firstname) then concat($academic, ' ', $surname, ', ', $firstname)
-          else if ($academic) then concat($academic, ' ', $surname)
-          else if ($firstname) then concat($surname, ', ', $firstname)
-          else $surname
-        "/>
+      <xsl:value-of select="
+        if ($title and $firstname) then concat($title, ' ', $surname, ', ', $firstname)
+        else if ($title) then concat($title, ' ', $surname)
+        else if ($firstname) then concat($surname, ', ', $firstname)
+        else $surname
+      "/>
       </field>
       <field name="cug.matrikel.name.plain">
         <xsl:value-of select="

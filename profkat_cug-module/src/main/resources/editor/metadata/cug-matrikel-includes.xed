@@ -235,10 +235,20 @@
                   </div>
                 </div>
               </xed:bind>
+              <xed:bind xpath="prefix">
+                <div class="row ir-editor-row">
+                  <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint" for="namePrefix">
+                    <xed:output i18n="cug.name.prefix" />
+                  </label>
+                  <div class="col-sm-10">
+                    <input id="namePrefix" type="text" class="form-control input-sm" />
+                  </div>
+                </div>
+              </xed:bind>
               <xed:bind xpath="academic">
                 <div class="row ir-editor-row">
                   <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint" for="academicTitle">
-                    <xed:output i18n="cug.academicTitle" />
+                    <xed:output i18n="cug.name.academicTitle" />
                   </label>
                   <div class="col-sm-10">
                     <input id="academicTitle" type="text" class="form-control input-sm" />

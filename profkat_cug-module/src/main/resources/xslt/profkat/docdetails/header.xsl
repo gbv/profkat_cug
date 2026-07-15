@@ -29,14 +29,16 @@
   <xsl:template match="mycoreobject[contains(@ID, '_matrikel_')]">
     <xsl:variable name="name" select="(metadata/box.name/name)[1]" />
 
-    <xsl:variable name="academic" select="$name/academic" />
     <xsl:variable name="surname" select="$name/surname" />
     <xsl:variable name="firstname" select="$name/firstname" />
+    <xsl:variable name="academic" select="$name/academic" />
+    <xsl:variable name="prefix" select="$name/prefix" />
+    <xsl:variable name="title" select="normalize-space(concat($academic, ' ', $prefix))" />
 
     <h2>
       <xsl:value-of select="
-        if (normalize-space($academic))
-        then concat($academic, ' ', $surname, ', ', $firstname)
+        if (normalize-space($title))
+        then concat($title, ' ', $surname, ', ', $firstname)
         else concat($surname, ', ', $firstname)
       " />
     </h2>

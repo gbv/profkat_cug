@@ -18,10 +18,12 @@
     <xsl:variable name="surname" select="$name/surname[1]" />
     <xsl:variable name="firstname" select="$name/firstname[1]" />
     <xsl:variable name="academic" select="$name/academic[1]" />
+    <xsl:variable name="prefix" select="$name/prefix[1]" />
+    <xsl:variable name="title" select="normalize-space(concat($academic, ' ', $prefix))" />
 
     <xsl:value-of select="
-      if ($academic)
-      then concat($academic, ' ', $surname, ', ', $firstname)
+      if ($title)
+      then concat($title, ' ', $surname, ', ', $firstname)
       else concat($surname, ', ', $firstname)
     " />
   </xsl:template>
