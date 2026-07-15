@@ -18,7 +18,6 @@
   </xsl:template>
 
   <xsl:template match="metadata" mode="matrikel">
-    <xsl:call-template name="diploma" />
     <xsl:call-template name="enrollment" />
     <xsl:call-template name="fee" />
     <xsl:call-template name="guardian" />
@@ -28,14 +27,15 @@
     <xsl:call-template name="other-info" />
     <xsl:call-template name="prior-enrollment" />
     <xsl:call-template name="prior-matriculation" />
+    <xsl:call-template name="school-certificate" />
     <xsl:call-template name="source" />
     <xsl:call-template name="status" />
   </xsl:template>
 
-  <xsl:template name="diploma">
-    <xsl:if test="box.diploma/diploma">
-      <field name="cug.matrikel.diploma">
-        <xsl:value-of select="box.diploma/diploma" />
+  <xsl:template name="school-certificate">
+    <xsl:if test="box.school-certificate/school-certificate/text">
+      <field name="cug.matrikel.school_certificate">
+        <xsl:value-of select="box.school-certificate/school-certificate/text" />
       </field>
     </xsl:if>
   </xsl:template>

@@ -53,7 +53,7 @@
     <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="fee" />
     <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="occupation" />
     <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="guardian" />
-    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="diploma" />
+    <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="school-certificate" />
     <xed:include uri="resource:editor/metadata/person-editor-includes.xed" ref="other-infos" />
     <xed:include uri="resource:editor/metadata/cug-matrikel-includes.xed" ref="source" />
 

@@ -30,29 +30,6 @@
     </xed:bind>
   </xed:template>
 
-  <xed:template id="diploma">
-    <xed:bind xpath="box.diploma[@class='MCRMetaLangText']">
-      <div class="form-group row">
-        <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="diploma">
-          <xed:output i18n="cug.diploma" />
-        </label>
-        <div class="col-sm-10">
-          <div class="row ir-editor-row ir-editor-row-1">
-            <div class="col-sm-10">
-              <div class="row ir-editor-row">
-                <div class="offset-sm-2 col-sm-10">
-                  <xed:bind xpath="diploma">
-                    <input id="diploma" type="text" class="form-control input-sm" />
-                  </xed:bind>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </xed:bind>
-  </xed:template>
-
   <xed:template id="enrollment-date">
     <xed:bind xpath="box.enrollment-date[@class='MCRMetaHistoryDate']">
       <div class="form-group row">
@@ -349,6 +326,52 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="school-certificate">
+    <xed:bind xpath="box.school-certificate[@class='MCRMetaXML']">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label input-sm ir-editor-label">
+          <xed:output i18n="cug.schoolCertificate" />
+        </label>
+        <div class="col-sm-10">
+          <xed:bind xpath="school-certificate">
+            <div class="row ir-editor-row ir-editor-row-1">
+              <div class="col-sm-10">
+                <div class="row ir-editor-row">
+                  <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint" for="schoolCertificateText">
+                    <xed:output i18n="OMD.profkat.hint.text" />
+                  </label>
+                  <xed:bind xpath="text">
+                    <div class="col-sm-10">
+                      <input id="schoolCertificateText" type="text" class="form-control input-sm" />
+                    </div>
+                  </xed:bind>
+                </div>
+                <div class="row ir-editor-row">
+                  <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint" for="schoolCertificatePlace">
+                    <xed:output i18n="OMD.profkat.hint.place" />
+                  </label>
+                  <xed:bind xpath="place">
+                    <div class="col-sm-4">
+                      <input id="schoolCertificatePlace" type="text" class="form-control input-sm" />
+                    </div>
+                    <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint" for="schoolCertificatePlaceId">
+                      <xed:output i18n="OMD.profkat.hint.geoid" />
+                    </label>
+                    <xed:bind xpath="@geoid">
+                      <div class="col-sm-4">
+                        <input id="schoolCertificatePlaceId" type="text" class="form-control input-sm" />
+                      </div>
+                    </xed:bind>
+                  </xed:bind>
+                </div>
+              </div>
+            </div>
+          </xed:bind>
         </div>
       </div>
     </xed:bind>

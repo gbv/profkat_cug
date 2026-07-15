@@ -25,7 +25,7 @@
 
         <xsl:call-template name="dd_separator" />
 
-        <xsl:call-template name="display-diploma" />
+        <xsl:call-template name="display-school-certificate" />
         <xsl:call-template name="display-prior-enrollment" />
         <xsl:call-template name="display-prior-matriculation" />
 
@@ -156,12 +156,12 @@
     </xsl:if>
   </xsl:template>
 
-  <xsl:template name="display-diploma">
-    <xsl:if test="./metadata/box.diploma/diploma/text()">
+  <xsl:template name="display-school-certificate">
+    <xsl:if test="./metadata/box.school-certificate/school-certificate/text">
       <xsl:call-template name="display-text">
-        <xsl:with-param name="key" select="'diploma'" />
-        <xsl:with-param name="label-key" select="'cug.diploma'" />
-        <xsl:with-param name="text" select="./metadata/box.diploma/diploma/text()" />
+        <xsl:with-param name="key" select="'schoolCertificate'" />
+        <xsl:with-param name="label-key" select="'cug.schoolCertificate'" />
+        <xsl:with-param name="text" select="./metadata/box.school-certificate/school-certificate/text" />
       </xsl:call-template>
     </xsl:if>
   </xsl:template>
