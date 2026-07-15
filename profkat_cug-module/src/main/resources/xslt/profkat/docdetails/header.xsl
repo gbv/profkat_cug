@@ -54,7 +54,7 @@
           <tr>
             <xsl:if test="$semester">
               <td>
-                <xsl:value-of select="mcrclass:current-label-text($semester)" />
+                <xsl:value-of select="mcri18n:translate('cug.since') || ' ' || mcrclass:current-label-text($semester)" />
               </td>
             </xsl:if>
             <xsl:if test="$field-of-study">
