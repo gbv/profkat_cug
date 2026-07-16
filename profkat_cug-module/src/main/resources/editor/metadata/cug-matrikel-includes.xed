@@ -339,7 +339,7 @@
   </xed:template>
 
   <xed:template id="prior-matriculation">
-    <xed:bind xpath="box.prior-matriculation[@class='MCRMetaLangText']">
+    <xed:bind xpath="box.prior-matriculation[@class='MCRMetaLinkID']">
       <div class="form-group row">
         <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="priorMatriculation">
           <xed:output i18n="cug.priorMatriculation" />
@@ -350,7 +350,30 @@
               <div class="row ir-editor-row">
                 <div class="offset-sm-2 col-sm-10">
                   <xed:bind xpath="prior-matriculation">
-                    <input id="priorMatriculation" type="text" class="form-control input-sm" />
+                    <xed:bind xpath="@xlink:type" set="locator" />
+                    <div class="cug-picker cug-reference-picker" data-object-type="matrikel">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          id="priorMatriculation"
+                          class="form-control"
+                          autocomplete="off"
+                          name=""
+                          data-input=""
+                        />
+                        <span class="badge-slot input-group-text">
+                          <span data-badge="" class="badge text-bg-primary">
+                            <span class="far fa-times-circle" />
+                          </span>
+                        </span>
+                      </div>
+                      <xed:bind xpath="@xlink:href">
+                        <input type="hidden" data-href=""  />
+                      </xed:bind>
+                      <xed:bind xpath="@xlink:title">
+                        <input type="hidden" data-slot="title" data-title="" />
+                      </xed:bind>
+                    </div>
                   </xed:bind>
                 </div>
               </div>
@@ -359,6 +382,7 @@
         </div>
       </div>
     </xed:bind>
+    <xed:cleanup-rule xpath="//prior-matriculation" relevant-if="(string-length(@xlink:href) &gt; 0)" />
   </xed:template>
 
   <xed:template id="school-certificate">

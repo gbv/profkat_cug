@@ -59,6 +59,7 @@
 
     <xed:cleanup-rule xpath="//*[@class='MCRMetaXML']/*" relevant-if="./*" />
     <script type="module" src="{$WebApplicationBaseURL}js/cug/category-picker.js"></script>
+    <script type="module" src="{$WebApplicationBaseURL}js/cug/reference-picker.js"></script>
   </xed:template>
 
   <xed:template id="person">

@@ -9,6 +9,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         'category-picker': 'src/editor/category-picker/entry.ts',
+        'reference-picker': 'src/editor/reference-picker/entry.ts',
       },
       output: {
         entryFileNames: '[name].js',
