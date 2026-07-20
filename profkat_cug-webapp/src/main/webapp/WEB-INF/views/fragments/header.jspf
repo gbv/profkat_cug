@@ -111,7 +111,7 @@
             <a class="dropdown-item" href="${WebApplicationBaseURL}do/indexbrowser/matname">
               <fmt:message key="Nav.Profkat.Index" />
             </a>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="${WebApplicationBaseURL}do/search/cug-matrikel-bar">
               <fmt:message key="Nav.Profkat.Search" />
             </a>
           </div>

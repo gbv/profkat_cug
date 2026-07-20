@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xed:template xmlns:xed="http://www.mycore.de/xeditor">
+
+  <xed:template id="name">
+    <xed:bind xpath="condition[@field='cug.matrikel.name.plain'][@operator='like']">
+      <div class="form-row ir-editor-row" style="margin-bottom:6px">
+        <label class="col-sm-3 control-label input-sm" for="matrikelName">
+          <xed:output i18n="cug.search.matrikel.name" />
+        </label>
+        <div class="col-sm-9">
+          <xed:bind xpath="@value">
+            <input id="matrikelName" type="text" class="form-control input-sm" />
+          </xed:bind>
+        </div>
+      </div>
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="generic">
+    <xed:repeat xpath="condition">
+      <div class="form-row ir-editor-row">
+        <div class="col-sm-3">
+          <xed:bind xpath="@field">
+            <select id="choose_field" class="form-control">
+              <option value="allMeta">
+                <xed:output i18n="Editor.Search.metadata" />
+              </option>
+              <option value="cug.matrikel.enrollment_date">
+                <xed:output i18n="cug.enrollmentDate" />
+              </option>
+              <option value="cug.matrikel.enrollment_number">
+                <xed:output i18n="cug.enrollmentNumber" />
+              </option>
+              <option value="cug.matrikel.enrollment_sequence_number">
+                <xed:output i18n="cug.enrollmentSequenceNumber" />
+              </option>
+              <option value="cug.matrikel.fee">
+                <xed:output i18n="cug.fee" />
+              </option>
+              <option value="cug.matrikel.guardian">
+                <xed:output i18n="cug.guardian" />
+              </option>
+              <option value="cug.matrikel.prior_enrollment">
+                <xed:output i18n="cug.priorEnrollments" />
+              </option>
+              <option value="cug.matrikel.occupation">
+                <xed:output i18n="cug.occupation" />
+              </option>
+              <option value="cug.matrikel.origin">
+                <xed:output i18n="cug.origin" />
+              </option>
+              <option value="cug.matrikel.guardian">
+                <xed:output i18n="cug.guardian" />
+              </option>
+              <option value="cug.matrikel.school_certificate">
+                <xed:output i18n="cug.schoolCertificate" />
+              </option>
+              <option value="cug.matrikel.source">
+                <xed:output i18n="cug.source" />
+              </option>
+            </select>
+          </xed:bind>
+        </div>
+        <div class="col-sm-2">
+          <xed:bind xpath="@operator">
+            <select id="choose_field" class="form-control">
+              <option value="contains"><xed:output i18n="Editor.Search.contains" /></option>
+              <option value="like"><xed:output i18n="Editor.Search.like" /></option>
+              <option value="phrase"><xed:output i18n="Editor.Search.phrases"/></option>
+              <option value="=">=</option>
+              <option value="&gt;">&gt;</option>
+              <option value="&gt;=">&gt;=</option>
+              <option value="&lt;">&lt;</option>
+              <option value="&lt;=">&lt;=</option>
+            </select>
+          </xed:bind>
+       </div>
+        <div class="col-sm-5">
+          <xed:bind xpath="@value">
+            <input id="choose_value" class="form-control" />
+          </xed:bind>
+         </div>
+         <div class="col-sm-2">
+           <div class="btn-group btn-group-sm pull-right">
+             <xed:controls />
+           </div>
+        </div>
+      </div>
+    </xed:repeat>
+  </xed:template>
+
+  <xed:template id="field-of-studies">
+    <div class="form-row ir-editor-row">
+      <label class="col-sm-3 control-label input-sm" for="fieldOfStudy">
+        <xed:output i18n="cug.fieldsOfStudy" />
+      </label>
+      <div class="col-sm-9">
+        <xed:repeat xpath="condition2[@field='category.top'][@operator='=']">
+          <div class="row">
+            <div class="col-sm-9">
+              <xed:bind xpath="@value">
+                <select id="fieldOfStudy" class="form-control">
+                  <option value="">
+                    <xed:output i18n="Editor.Search.List.all" />
+                  </option>
+                  <xed:include uri="xslStyle:items2options:classification:editorComplete:-1:children:cug_class_field_of_study" />
+                </select>
+              </xed:bind>
+            </div>
+            <div class="col-sm-3">
+              <div class="btn-group btn-group-sm pull-right">
+                <xed:controls />
+              </div>
+            </div>
+          </div>
+        </xed:repeat>
+      </div>
+    </div>
+  </xed:template>
+
+  <xed:template id="semesters">
+    <div class="form-row ir-editor-row">
+      <label class="col-sm-3 control-label input-sm" for="semester">
+        <xed:output i18n="cug.semester" />
+      </label>
+      <div class="col-sm-9">
+        <xed:repeat xpath="condition3[@field='category.top'][@operator='=']">
+          <div class="row">
+            <div class="col-sm-9">
+              <xed:bind xpath="@value">
+                <select id="semester" class="form-control">
+                  <option value="">
+                    <xed:output i18n="Editor.Search.List.all" />
+                  </option>
+                  <xed:include uri="xslStyle:items2options:classification:editorComplete:-1:children:cug_class_semester" />
+                </select>
+              </xed:bind>
+            </div>
+            <div class="col-sm-3">
+              <div class="btn-group btn-group-sm pull-right">
+                <xed:controls />
+              </div>
+            </div>
+          </div>
+        </xed:repeat>
+      </div>
+    </div>
+  </xed:template>
+
+</xed:template>
