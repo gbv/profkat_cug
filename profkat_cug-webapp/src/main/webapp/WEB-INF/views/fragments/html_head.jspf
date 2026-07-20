@@ -15,9 +15,9 @@
       <link rel="canonical" href="${WebApplicationBaseURL}resolve/id/${param.id}" />
     </c:if>
 
+    <!-- TODO move to footer -->
     <mcr:webjarLocator htmlElement="script" project="jquery" file="jquery.min.js" />
     <mcr:webjarLocator htmlElement="stylesheet" project="font-awesome" file="all.min.css" />
 
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/profkat.css" />
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/rsc/sass/layout/bootstrap-profkat_sample.css" />
-
