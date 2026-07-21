@@ -6,18 +6,8 @@
 
   <xsl:import href="xslImport:solr-document:solr/indexing/cug-matrikel.xsl" />
   <xsl:import href="resource:xslt/solr/indexing/solrutil.xsl" />
-  
-  <xsl:param name="WebApplicationBaseURL" />
 
-  <xsl:template match="mycoreobject[contains(@ID,'_matrikel_')]">
-    <xsl:apply-imports />
-    <xsl:apply-templates select="metadata" mode="matrikel" />
-    <field name="purl">
-      <xsl:value-of select="concat($WebApplicationBaseURL, 'resolve/id/', ./@ID)" />
-    </field>
-  </xsl:template>
-
-  <xsl:template match="metadata" mode="matrikel">
+  <xsl:template match="metadata[contains(../@ID,'_matrikel_')]">
     <xsl:call-template name="enrollment" />
     <xsl:call-template name="fee" />
     <xsl:call-template name="guardian" />

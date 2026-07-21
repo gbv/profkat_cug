@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="3.0"
+  xmlns="http://www.w3.org/1999/xhtml"
   xmlns:mcrclass="http://www.mycore.de/xslt/classification"
+  xmlns:mcri18n="http://www.mycore.de/xslt/i18n"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   exclude-result-prefixes="#all"
   expand-text="yes">
 
+  <xsl:import href="xslImport:docdetails-metadata:profkat/docdetails/cug-metadata-matrikel.xsl" />
   <xsl:import href="resource:xslt/functions/classification.xsl" />
-  <xsl:import href="resource:xslt/profkat/docdetails/metadata-util.xsl" />
+  <xsl:import href="resource:xslt/functions/i18n.xsl" />
+  <xsl:import href="resource:xslt/docdetails/docdetails.xsl" />
 
-  <xsl:template match="/mycoreobject" mode="matrikel">
+  <xsl:param name="CurrentLang" />
+  <xsl:param name="DefaultLang" />
+
+  <xsl:template match="mycoreobject[contains(@ID, '_matrikel_')]">
     <xsl:variable name="project" select="substring-before(@ID, '_')" />
     <div class="row">
       <div id="docdetails-data" class="col">
@@ -176,6 +183,55 @@
         </tr>
       </xsl:with-param>
     </xsl:call-template>
+  </xsl:template>
+
+    <xsl:template name="display-other-infos">
+      <xsl:if test="./metadata/box.otherinfo/otherinfo">
+        <xsl:call-template name="dd_block">
+          <xsl:with-param name="key" select="'otherinfo'"/>
+          <xsl:with-param name="labelkey" select="'OMD.profkat.otherinfos'"/>
+          <xsl:with-param name="items">
+            <xsl:for-each select="./metadata/box.otherinfo/otherinfo">
+              <tr>
+                <td><xsl:value-of select="." /></td>
+              </tr>
+            </xsl:for-each>
+          </xsl:with-param>
+        </xsl:call-template>
+      </xsl:if>
+    </xsl:template>
+
+  <xsl:template name="display-meta">
+    <xsl:param name="project" />
+
+    <xsl:if test=".">
+      <xsl:call-template name="dd_block">
+        <xsl:with-param name="key" select="'created_changed'"/>
+        <xsl:with-param name="labelkey" select="'OMD.profkat.created_changed'"/>
+        <xsl:with-param name="css_class" select="'col2 w-100'"/>
+        <xsl:with-param name="items">
+          <tr>
+            <td colspan="2">
+              {format-dateTime(./service/servdates/servdate[@type='createdate'], '[D,2].[M,2].[Y]')}{
+              if(not($project='cpb')) then (concat(', ', ./service/servflags/servflag[@type='createdby'])) else()}
+              /
+              {format-dateTime(./service/servdates/servdate[@type='modifydate'], '[D,2].[M,2].[Y]')}{
+              if(not($project='cpb')) then (concat(', ', ./service/servflags/servflag[@type='modifiedby'])) else()}
+            </td>
+          </tr>
+          <xsl:for-each select="./metadata/box.internalinfo/internalinfo[@type='editor']">
+            <tr>
+              <td>
+                {mcri18n:translate(concat('OMD.profkat.internalinfo.',./@type))}
+              </td>
+              <td>
+                <xsl:value-of select="./text()" />
+              </td>
+            </tr>
+          </xsl:for-each>
+        </xsl:with-param>
+      </xsl:call-template>
+    </xsl:if>
   </xsl:template>
 
 </xsl:stylesheet>
