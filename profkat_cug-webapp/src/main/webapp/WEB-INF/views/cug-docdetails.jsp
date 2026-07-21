@@ -129,7 +129,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <jsp:include page="includes/citation_profkat.jsp">
+              <jsp:include page="includes/cug-citation.jsp">
                 <jsp:param name="mcrobj" value="${mcrobj}" />
               </jsp:include>
             </div>
