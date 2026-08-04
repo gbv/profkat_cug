@@ -11,7 +11,7 @@
   <xsl:param name="DefaultLang" />
   <xsl:param name="WebApplicationBaseURL" />
 
-  <xsl:template match="mycoreobject[contains(@ID, '_matrikel_')]">
+  <xsl:template match="/mycoreobject[contains(@ID, '_matrikel_')]">
     <div id="citation" class="ir-box ir-box-emph py-2 profkat-citation">
       <h5>
         <xsl:value-of select="mcri18n:translate('OMD.profkat.quoting') || ':'" />

@@ -15,7 +15,7 @@
   <xsl:param name="CurrentLang" />
   <xsl:param name="DefaultLang" />
 
-  <xsl:template match="mycoreobject[contains(@ID, '_matrikel_')]">
+  <xsl:template match="/mycoreobject[contains(@ID, '_matrikel_')]">
     <xsl:variable name="project" select="substring-before(@ID, '_')" />
     <div class="row">
       <div id="docdetails-data" class="col">

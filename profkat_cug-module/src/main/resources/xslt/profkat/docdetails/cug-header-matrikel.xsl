@@ -16,7 +16,7 @@
   <xsl:param name="CurrentLang" />
   <xsl:param name="DefaultLang" />
 
-  <xsl:template match="mycoreobject[contains(@ID, '_matrikel_')]">
+  <xsl:template match="/mycoreobject[contains(@ID, '_matrikel_')]">
     <div class="row">
       <div id="docdetails-header" class="col">
         <h2>
