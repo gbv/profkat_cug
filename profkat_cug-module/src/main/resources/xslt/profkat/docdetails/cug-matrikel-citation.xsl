@@ -4,7 +4,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   exclude-result-prefixes="#all">
 
-  <xsl:import href="xslImport:docdetails-citation:profkat/docdetails/cug-citation-matrikel.xsl" />
+  <xsl:import href="xslImport:docdetails-citation:profkat/docdetails/cug-matrikel-citation.xsl" />
   <xsl:import href="resource:xslt/functions/i18n.xsl" />
 
   <xsl:param name="CurrentLang" />

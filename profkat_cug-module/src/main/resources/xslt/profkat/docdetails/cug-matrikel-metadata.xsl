@@ -7,7 +7,7 @@
   exclude-result-prefixes="#all"
   expand-text="yes">
 
-  <xsl:import href="xslImport:docdetails-metadata:profkat/docdetails/cug-metadata-matrikel.xsl" />
+  <xsl:import href="xslImport:docdetails-metadata:profkat/docdetails/cug-matrikel-metadata.xsl" />
   <xsl:import href="resource:xslt/functions/classification.xsl" />
   <xsl:import href="resource:xslt/functions/i18n.xsl" />
   <xsl:import href="resource:xslt/docdetails/docdetails.xsl" />

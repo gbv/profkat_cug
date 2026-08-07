@@ -4,7 +4,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   exclude-result-prefixes="#all">
 
-  <xsl:import href="xslImport:docdetails-title:profkat/docdetails/cug-title-matrikel.xsl" />
+  <xsl:import href="xslImport:docdetails-title:profkat/docdetails/cug-matrikel-title.xsl" />
   <xsl:import href="resource:xslt/functions/cug-metadata-utils.xsl" />
 
   <xsl:template match="/mycoreobject[contains(@ID, '_matrikel_') and metadata/box.name/name/(surname or firstname)]">

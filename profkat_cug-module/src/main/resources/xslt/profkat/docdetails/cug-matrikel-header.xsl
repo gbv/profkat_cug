@@ -7,7 +7,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   exclude-result-prefixes="#all">
 
-  <xsl:import href="xslImport:docdetails-header:profkat/docdetails/cug-header-matrikel.xsl" />
+  <xsl:import href="xslImport:docdetails-header:profkat/docdetails/cug-matrikel-header.xsl" />
   <xsl:import href="resource:xslt/functions/classification.xsl" />
   <xsl:import href="resource:xslt/functions/i18n.xsl" />
   <xsl:import href="resource:xslt/functions/cug-metadata-utils.xsl" />
