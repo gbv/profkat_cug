@@ -4,6 +4,13 @@ import java.util.Objects;
 
 import org.mycore.profkat.bpmn.workflows.create_object_simple.MCRWorkflowMgrPerson;
 
+/**
+ * Workflow manager for CUG-specific object creation.
+ *
+ * <p>Provides default metadata for CUG object types that require
+ * custom initialization. Currently, this only applies to
+ * {@code cug_matrikel} objects.
+ */
 public class CUGWorkflowMgr extends MCRWorkflowMgrPerson {
 
     private static final String CUG_MATRIKEL = "cug_matrikel";
