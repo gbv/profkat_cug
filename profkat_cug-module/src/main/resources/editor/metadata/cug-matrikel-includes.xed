@@ -475,19 +475,19 @@
     </xed:bind>
   </xed:template>
 
-  <xed:template id="source">
-    <xed:bind xpath="box.source[@class='MCRMetaLangText']">
+  <xed:template id="record-content">
+    <xed:bind xpath="box.record-content[@class='MCRMetaLangText']">
       <div class="form-group row">
-        <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="sourceInfo">
-          <xed:output i18n="cug.source" />
+        <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="recordContentInfo">
+          <xed:output i18n="cug.record-content" />
         </label>
         <div class="col-sm-10">
           <div class="row ir-editor-row ir-editor-row-1">
             <div class="col-sm-10">
               <div class="row ir-editor-row">
                 <div class="offset-sm-2 col-sm-10">
-                  <xed:bind xpath="source">
-                    <input id="sourceInfo" type="text" class="form-control input-sm" />
+                  <xed:bind xpath="record-content">
+                    <input id="recordContentInfo" type="text" class="form-control input-sm" />
                   </xed:bind>
                 </div>
               </div>

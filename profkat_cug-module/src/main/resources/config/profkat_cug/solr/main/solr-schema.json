@@ -113,6 +113,14 @@
   },
   {
     "add-field": {
+      "name": "cug.matrikel.record_content",
+      "type": "text_de",
+      "multiValued": false,
+      "stored": true
+    }
+  },
+  {
+    "add-field": {
       "name": "cug.matrikel.school_certificate",
       "type": "text_de",
       "multiValued": false,
@@ -122,14 +130,6 @@
   {
     "add-field": {
       "name": "cug.matrikel.semester",
-      "type": "text_de",
-      "multiValued": false,
-      "stored": true
-    }
-  },
-  {
-    "add-field": {
-      "name": "cug.matrikel.source",
       "type": "text_de",
       "multiValued": false,
       "stored": true

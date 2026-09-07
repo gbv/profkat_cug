@@ -64,7 +64,7 @@
       </xs:sequence>
     </element>
     <element name="otherinfo" wrapper="box.otherinfo" type="text" minOccurs="0" maxOccurs="unbounded" />
-    <element name="source" wrapper="box.source" type="text" minOccurs="0" maxOccurs="1" />
+    <element name="record-content" wrapper="box.record-content" type="text" minOccurs="0" maxOccurs="1" />
     <element name="status" wrapper="box.status" type="text" style="small" minOccurs="0" maxOccurs="1" />
   </metadata>
 </objecttype>

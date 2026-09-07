@@ -55,8 +55,8 @@
               <option value="cug.matrikel.school_certificate">
                 <xed:output i18n="cug.schoolCertificate" />
               </option>
-              <option value="cug.matrikel.source">
-                <xed:output i18n="cug.source" />
+              <option value="cug.matrikel.record-content">
+                <xed:output i18n="cug.record-content" />
               </option>
             </select>
           </xed:bind>

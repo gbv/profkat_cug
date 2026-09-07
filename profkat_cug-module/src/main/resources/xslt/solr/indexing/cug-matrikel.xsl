@@ -18,7 +18,7 @@
     <xsl:call-template name="prior-enrollment" />
     <xsl:call-template name="prior-studies" />
     <xsl:call-template name="school-certificate" />
-    <xsl:call-template name="source" />
+    <xsl:call-template name="record-content" />
     <xsl:call-template name="status" />
   </xsl:template>
 
@@ -182,10 +182,10 @@
     </xsl:if>
   </xsl:template>
 
-  <xsl:template name="source">
-    <xsl:if test="box.source/source">
-      <field name="cug.matrikel.source">
-        <xsl:value-of select="box.source/source" />
+  <xsl:template name="record-content">
+    <xsl:if test="box.record-content/record-content">
+      <field name="cug.matrikel.record_content">
+        <xsl:value-of select="box.record-content/record-content" />
       </field>
     </xsl:if>
   </xsl:template>

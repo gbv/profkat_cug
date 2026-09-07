@@ -36,7 +36,7 @@
       <xed:include ref="guardian" />
       <xed:include ref="school-certificate" />
       <xed:include uri="resource:editor/metadata/person-includes.xed" ref="other-infos" />
-      <xed:include ref="source" />
+      <xed:include ref="record-content" />
       <script type="module" src="{$WebApplicationBaseURL}js/cug/category-picker.js"></script>
       <script type="module" src="{$WebApplicationBaseURL}js/cug/reference-picker.js"></script>
     </xed:bind>
