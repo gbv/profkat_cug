@@ -30,7 +30,7 @@
       <xed:include ref="origin" />
       <xed:include ref="fields-of-study" />
       <xed:include ref="prior-studies" />
-      <xed:include ref="prior-matriculation" />
+      <xed:include ref="prior-enrollment" />
       <xed:include ref="fee" />
       <xed:include ref="occupation" />
       <xed:include ref="guardian" />

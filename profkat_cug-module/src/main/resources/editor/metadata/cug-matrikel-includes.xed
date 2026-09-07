@@ -338,24 +338,24 @@
     </xed:bind>
   </xed:template>
 
-  <xed:template id="prior-matriculation">
-    <xed:bind xpath="box.prior-matriculation[@class='MCRMetaLinkID']">
+  <xed:template id="prior-enrollment">
+    <xed:bind xpath="box.prior-enrollment[@class='MCRMetaLinkID']">
       <div class="form-group row">
-        <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="priorMatriculation">
-          <xed:output i18n="cug.priorMatriculation" />
+        <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="priorEnrollment">
+          <xed:output i18n="cug.priorEnrollment" />
         </label>
         <div class="col-sm-10">
           <div class="row ir-editor-row ir-editor-row-1">
             <div class="col-sm-10">
               <div class="row ir-editor-row">
                 <div class="offset-sm-2 col-sm-10">
-                  <xed:bind xpath="prior-matriculation">
+                  <xed:bind xpath="prior-enrollment">
                     <xed:bind xpath="@xlink:type" set="locator" />
                     <div class="cug-picker cug-reference-picker" data-object-type="matrikel">
                       <div class="input-group">
                         <input
                           type="text"
-                          id="priorMatriculation"
+                          id="priorEnrollment"
                           class="form-control"
                           autocomplete="off"
                           name=""
@@ -382,7 +382,7 @@
         </div>
       </div>
     </xed:bind>
-    <xed:cleanup-rule xpath="//prior-matriculation" relevant-if="(string-length(@xlink:href) &gt; 0)" />
+    <xed:cleanup-rule xpath="//prior-enrollment" relevant-if="(string-length(@xlink:href) &gt; 0)" />
   </xed:template>
 
   <xed:template id="school-certificate">

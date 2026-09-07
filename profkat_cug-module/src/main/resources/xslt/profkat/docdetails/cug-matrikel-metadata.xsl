@@ -34,7 +34,7 @@
 
         <xsl:call-template name="display-school-certificate" />
         <xsl:call-template name="display-prior-study" />
-        <xsl:call-template name="display-prior-matriculation" />
+        <xsl:call-template name="display-prior-enrollment" />
 
         <xsl:call-template name="dd_separator" />
 
@@ -117,12 +117,12 @@
     </xsl:if>
   </xsl:template>
 
-  <xsl:template name="display-prior-matriculation">
-    <xsl:if test="./metadata/box.prior-matriculation/prior-matriculation/text()">
+  <xsl:template name="display-prior-enrollment">
+    <xsl:if test="./metadata/box.prior-enrollment/prior-enrollment/text()">
       <xsl:call-template name="display-text">
-        <xsl:with-param name="key" select="'prior-matriculation'" />
-        <xsl:with-param name="label-key" select="'cug.priorMatriculation'" />
-        <xsl:with-param name="text" select="./metadata/box.prior-matriculation/prior-matriculation/text()" />
+        <xsl:with-param name="key" select="'prior-enrollment'" />
+        <xsl:with-param name="label-key" select="'cug.priorEnrollment'" />
+        <xsl:with-param name="text" select="./metadata/box.prior-enrollment/prior-enrollment/text()" />
       </xsl:call-template>
     </xsl:if>
   </xsl:template>

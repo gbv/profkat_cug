@@ -44,7 +44,7 @@
         </xs:element>
       </xs:sequence>
     </element>
-    <element name="prior-matriculation" wrapper="box.prior-matriculation" type="link" minOccurs="0" maxOccurs="1" />
+    <element name="prior-enrollment" wrapper="box.prior-enrollment" type="link" minOccurs="0" maxOccurs="1" />
     <!-- TODO fee classification? -->
     <element name="fee" wrapper="box.fee" type="text" minOccurs="0" maxOccurs="1" />
     <element name="occupation" wrapper="box.occupation" type="text" minOccurs="0" maxOccurs="1" />
