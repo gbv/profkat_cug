@@ -33,7 +33,7 @@
         <xsl:call-template name="dd_separator" />
 
         <xsl:call-template name="display-school-certificate" />
-        <xsl:call-template name="display-prior-enrollment" />
+        <xsl:call-template name="display-prior-study" />
         <xsl:call-template name="display-prior-matriculation" />
 
         <xsl:call-template name="dd_separator" />
@@ -101,13 +101,13 @@
     </xsl:if>
   </xsl:template>
 
-  <xsl:template name="display-prior-enrollment">
-    <xsl:if test="./metadata/box.prior-enrollment/prior-enrollment/text">
+  <xsl:template name="display-prior-study">
+    <xsl:if test="./metadata/box.prior-study/prior-study/text">
       <xsl:call-template name="dd_block">
-        <xsl:with-param name="key" select="'prior-enrollment'" />
-        <xsl:with-param name="labelkey" select="'cug.priorEnrollments'" />
+        <xsl:with-param name="key" select="'prior-study'" />
+        <xsl:with-param name="labelkey" select="'cug.priorStudies'" />
         <xsl:with-param name="items">
-          <xsl:for-each select="./metadata/box.prior-enrollment/prior-enrollment/text">
+          <xsl:for-each select="./metadata/box.prior-study/prior-study/text">
             <tr>
               <td><xsl:value-of select="." /></td>
             </tr>

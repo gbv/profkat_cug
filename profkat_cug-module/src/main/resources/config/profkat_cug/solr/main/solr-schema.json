@@ -73,17 +73,17 @@
   },
   {
     "add-field": {
-      "name": "cug.matrikel.prior_enrollment",
+      "name": "cug.matrikel.prior_matriculation",
       "type": "text_de",
-      "multiValued": true,
+      "multiValued": false,
       "stored": true
     }
   },
   {
     "add-field": {
-      "name": "cug.matrikel.prior_matriculation",
+      "name": "cug.matrikel.prior_study",
       "type": "text_de",
-      "multiValued": false,
+      "multiValued": true,
       "stored": true
     }
   },

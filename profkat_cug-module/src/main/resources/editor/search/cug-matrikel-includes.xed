@@ -40,8 +40,8 @@
               <option value="cug.matrikel.guardian">
                 <xed:output i18n="cug.guardian" />
               </option>
-              <option value="cug.matrikel.prior_enrollment">
-                <xed:output i18n="cug.priorEnrollments" />
+              <option value="cug.matrikel.prior_study">
+                <xed:output i18n="cug.priorStudies" />
               </option>
               <option value="cug.matrikel.occupation">
                 <xed:output i18n="cug.occupation" />

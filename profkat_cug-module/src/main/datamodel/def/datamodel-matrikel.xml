@@ -30,7 +30,7 @@
     <element name="field-of-study" wrapper="box.field-of-study" type="classification" style="select" minOccurs="0" maxOccurs="unbounded">
       <classification id="cug_class_field_of_study" />
     </element>
-    <element name="prior-enrollment" wrapper="box.prior-enrollment" type="xml" minOccurs="0" maxOccurs="unbounded">
+    <element name="prior-study" wrapper="box.prior-study" type="xml" minOccurs="0" maxOccurs="unbounded">
       <xs:sequence>
         <xs:element name="text" type="xs:string" minOccurs="0" maxOccurs="1" />
         <xs:element name="place" minOccurs="0" maxOccurs="1">
