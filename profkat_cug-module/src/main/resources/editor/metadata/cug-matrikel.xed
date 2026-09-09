@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xed:form
+  xmlns:xed="http://www.mycore.de/xeditor"
+  role="form"
+  class="form-horizontal ir-editor-form profkat-editor-metadata"
+  accept-charset="UTF-8" method="post">
+
+  <xed:preload uri="resource:editor/metadata/generic-includes.xed" />
+  <xed:preload uri="resource:editor/metadata/cug-matrikel-includes.xed" />
+
+  <div class="form-group row">
+    <label class="alert alert-info w-100 ir-editor-alert">
+      <xed:output i18n="Editor.Common.headline" />
+    </label>
+  </div>
+  <xed:include ref="cleanup-rules" />
+  <xed:include ref="in.out" />
+  <xed:bind xpath="/mycoreobject">
+    <xed:bind xpath="@ID" initially="{$MCR.SWF.Project.ID}_matrikel_00000000" />
+    <xed:bind xpath="@label" initially="person" />
+    <xed:bind xpath="@xsi:noNamespaceSchemaLocation" initially="datamodel-matrikel.xsd" />
+    <xed:bind xpath="metadata">
+      <xed:include ref="failed-validation-messages" />
+      <xed:include uri="resource:editor/metadata/person-includes.xed" ref="state" />
+      <xed:include ref="semester" />
+      <xed:include ref="enrollment-date" />
+      <xed:include ref="enrollment-number" />
+      <xed:include ref="enrollment-sequence-number" />
+      <xed:include ref="name" />
+      <xed:include ref="origin" />
+      <xed:include ref="fields-of-study" />
+      <xed:include ref="prior-studies" />
+      <xed:include ref="prior-enrollment" />
+      <xed:include ref="fee" />
+      <xed:include ref="occupation" />
+      <xed:include ref="guardian" />
+      <xed:include ref="school-certificate" />
+      <xed:include uri="resource:editor/metadata/person-includes.xed" ref="other-infos" />
+      <xed:include ref="record-content" />
+      <script type="module" src="{$WebApplicationBaseURL}js/cug/category-picker.js"></script>
+      <script type="module" src="{$WebApplicationBaseURL}js/cug/reference-picker.js"></script>
+    </xed:bind>
+    <xed:include ref="cancel.submit" />
+    <xed:include ref="validation-rules" />
+  </xed:bind>
+</xed:form>

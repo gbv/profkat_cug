@@ -6,15 +6,18 @@
 
     <meta name="mcr:baseurl" content="${WebApplicationBaseURL}" />
     <base href="${WebApplicationBaseURL}" />
-
+    <script>
+      var webApplicationBaseURL = '${WebApplicationBaseURL}';
+      var currentLang = 'de';
+    </script>
     <link type="image/x-icon" rel="shortcut icon" href="${pageContext.request.contextPath}/favicon.ico" />
     <c:if test="${not empty param.id}">
       <link rel="canonical" href="${WebApplicationBaseURL}resolve/id/${param.id}" />
     </c:if>
 
+    <!-- TODO move to footer -->
     <mcr:webjarLocator htmlElement="script" project="jquery" file="jquery.min.js" />
     <mcr:webjarLocator htmlElement="stylesheet" project="font-awesome" file="all.min.css" />
 
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/profkat.css" />
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/rsc/sass/layout/bootstrap-profkat_sample.css" />
-

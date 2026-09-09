@@ -53,18 +53,77 @@
       <div class="col ir-logo mt-4">
         <img
           style="width: 150px;float: left;"
-          src="${WebApplicationBaseURL}/images/logo_georg_august_univeritaet.png" />
+          src="${WebApplicationBaseURL}images/logo_georg_august_univeritaet.png" />
         <h1>Catalogus Universitatis Gottingensis</h1>
       </div>
     </div>
   </div>
 </div>
 <div class="container ir-nav-main">
-  <div class="row d-none d-md-block">
-    <div class="col-12">
-      <mcr:outputNavigation id="main" mode="navbar" cssClass="nav nav-pills nav-justified ir-nav-main" />
+  <nav class="navbar navbar-expand-md p-0">
+    <button
+      class="navbar-toggler ir-nav-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#irNavContent"
+      aria-controls="irNavContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="irNavContent">
+      <ul class="nav nav-pills nav-justified level-0 w-100">
+        <li class="nav-item">
+          <a class="nav-link" href="${WebApplicationBaseURL}">
+            <fmt:message key="Nav.Start" />
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="stuffDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false">
+            <fmt:message key="cug.nav.stuff" />
+          </a>
+          <div class="dropdown-menu" aria-labelledby="stuffDropdown">
+            <a class="dropdown-item" href="${WebApplicationBaseURL}do/indexbrowser/profname">
+              <fmt:message key="Nav.Profkat.Index" />
+            </a>
+            <a class="dropdown-item" href="${WebApplicationBaseURL}do/search/profkat-bar">
+              <fmt:message key="Nav.Profkat.Search" />
+            </a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="studentDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false">
+            <fmt:message key="cug.nav.students" />
+          </a>
+          <div class="dropdown-menu" aria-labelledby="studentDropdown">
+            <a class="dropdown-item" href="${WebApplicationBaseURL}do/indexbrowser/matname">
+              <fmt:message key="Nav.Profkat.Index" />
+            </a>
+            <a class="dropdown-item" href="${WebApplicationBaseURL}do/search/cug-matrikel-bar">
+              <fmt:message key="Nav.Profkat.Search" />
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="${WebApplicationBaseURL}site/ueber_uns?info=info.kontakt">
+            <fmt:message key="Nav.Profkat.AboutUs" />
+          </a>
+        </li>
+      </ul>
     </div>
-  </div>
+  </nav>
   <div class="row d-none d-md-block">
     <div class="col-12 ir-divider">
       <hr />

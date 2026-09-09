@@ -1,0 +1,70 @@
+<objecttype
+  name="matrikel"
+  isChild="false"
+  isParent="false"
+  hasDerivates="true"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xsi:noNamespaceSchemaLocation="datamodel.xsd">
+  <metadata>
+    <element name="semester" wrapper="box.semester" type="classification" style="select" minOccurs="0" maxOccurs="1">
+      <classification id="cug_class_semester" />
+    </element>
+    <element name="enrollment-date" wrapper="box.enrollment-date" type="historydate" minOccurs="0" maxOccurs="1" />
+    <element name="enrollment-number" wrapper="box.enrollment-number" type="text" minOccurs="0" maxOccurs="1" />
+    <element name="enrollment-sequence-number" wrapper="box.enrollment-sequence-number" type="text" minOccurs="0" maxOccurs="1" />
+    <element name="name" wrapper="box.name" type="personname" minOccurs="1" maxOccurs="1" />
+    <element name="origin" wrapper="box.origin" type="xml" minOccurs="0" maxOccurs="1">
+      <xs:sequence>
+        <xs:element name="place" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="geoid" type="xs:string" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </element>
+    <element name="field-of-study" wrapper="box.field-of-study" type="classification" style="select" minOccurs="0" maxOccurs="unbounded">
+      <classification id="cug_class_field_of_study" />
+    </element>
+    <element name="prior-study" wrapper="box.prior-study" type="xml" minOccurs="0" maxOccurs="unbounded">
+      <xs:sequence>
+        <xs:element name="text" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xs:element name="place" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="geoid" type="xs:string" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </element>
+    <element name="prior-enrollment" wrapper="box.prior-enrollment" type="link" minOccurs="0" maxOccurs="1" />
+    <!-- TODO fee classification? -->
+    <element name="fee" wrapper="box.fee" type="text" minOccurs="0" maxOccurs="1" />
+    <element name="occupation" wrapper="box.occupation" type="text" minOccurs="0" maxOccurs="1" />
+    <element name="guardian" wrapper="box.guardian" type="text" minOccurs="0" maxOccurs="1" />
+    <element name="school-certificate" wrapper="box.school-certificate" type="xml" minOccurs="0" maxOccurs="1">
+      <xs:sequence>
+        <xs:element name="text" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xs:element name="place" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="geoid" type="xs:string" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </element>
+    <element name="otherinfo" wrapper="box.otherinfo" type="text" minOccurs="0" maxOccurs="unbounded" />
+    <element name="record-content" wrapper="box.record-content" type="text" minOccurs="0" maxOccurs="1" />
+    <element name="status" wrapper="box.status" type="text" style="small" minOccurs="0" maxOccurs="1" />
+  </metadata>
+</objecttype>

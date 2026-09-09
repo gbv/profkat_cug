@@ -17,7 +17,10 @@
   <inceptionYear>2024</inceptionYear>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <frontend-maven-plugin.version>1.15.1</frontend-maven-plugin.version>
     <java.target.version>21</java.target.version>
+    <node.version>v20.14.0</node.version>
+    <yarn.version>v1.22.19</yarn.version>
   </properties>
   <build>
     <pluginManagement>

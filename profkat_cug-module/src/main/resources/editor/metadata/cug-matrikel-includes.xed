@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xed:template xmlns:xed="http://www.mycore.de/xeditor">
+
+  <xed:template id="fields-of-study">
+    <xed:bind xpath="box.field-of-study[@class='MCRMetaClassification']">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="fieldOfStudy">
+          <xed:output i18n="cug.fieldsOfStudy" />
+        </label>
+        <div class="col-sm-10">
+          <xed:repeat xpath="field-of-study[@classid='cug_class_field_of_study']">
+            <xed:cleanup-rule xpath="//box.field-of-study/field-of-study" relevant-if="@categid" />
+            <div class="row ir-editor-row ir-editor-row-1">
+              <div class="col-sm-10">
+                <div class="row ir-editor-row">
+                  <div class="offset-sm-2 col-sm-10">
+                    <xed:bind xpath="@categid">
+                      <div class="cug-picker cug-category-picker" data-classification-id="cug_class_field_of_study">
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            id="fieldOfStudy_{xed:generate-id()}"
+                            class="form-control"
+                            autocomplete="off"
+                            name=""
+                            data-input=""
+                          />
+                          <span class="badge-slot input-group-text">
+                            <span data-badge="" class="badge text-bg-primary">
+                              <span class="far fa-times-circle" />
+                            </span>
+                          </span>
+                        </div>
+                        <input type="hidden" data-id="" />
+                      </div>
+                    </xed:bind>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="btn-group btn-group-sm pull-right">
+                  <xed:controls />
+                </div>
+              </div>
+            </div>
+          </xed:repeat>
+        </div>
+      </div>
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="enrollment-date">
+    <xed:bind xpath="box.enrollment-date[@class='MCRMetaHistoryDate']">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="enrollmentDate">
+          <xed:output i18n="cug.enrollmentDate" />
+        </label>
+        <div class="col-sm-10">
+          <xed:bind xpath="enrollment-date">
+            <xed:cleanup-rule xpath="//box.enrollment-date/enrollment-date" relevant-if="text/text()" />
+            <xed:cleanup-rule xpath="//box.enrollment-date" relevant-if="enrollment-date" />
+            <div class="row ir-editor-row ir-editor-row-1">
+              <div class="col-sm-10">
+                <div class="row ir-editor-row">
+                  <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint text-nowrap" for="date_shown">
+                    <xed:output i18n="OMD.profkat.hint.dateShown" />
+                  </label>
+                  <xed:bind xpath="text[@xml:lang='de']">
+                    <div class="col-sm-2">
+                      <input id="date_shown" type="text" class="form-control input-sm" />
+                    </div>
+                  </xed:bind>
+                  <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint text-nowrap" for="date_shown">
+                    <xed:output i18n="OMD.profkat.hint.dateFrom" />
+                  </label>
+                  <xed:bind xpath="von">
+                    <div class="col-sm-2">
+                      <input id="date_from" type="text" class="form-control input-sm profkat-input-date-technical" />
+                    </div>
+                  </xed:bind>
+                  <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint text-nowrap" for="date_shown">
+                    <xed:output i18n="OMD.profkat.hint.dateTo" />
+                  </label>
+                  <xed:bind xpath="bis">
+                    <div class="col-sm-2">
+                      <input id="date_shown" type="text" class="form-control input-sm profkat-input-date-technical" />
+                    </div>
+                  </xed:bind>
+                </div>
+              </div>
+            </div>
+          </xed:bind>
+        </div>
+      </div>
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="enrollment-number">
+    <xed:bind xpath="box.enrollment-number[@class='MCRMetaLangText']">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="enrollmentNumber">
+          <xed:output i18n="cug.enrollmentNumber" />
+        </label>
+        <div class="col-sm-10">
+          <div class="row ir-editor-row ir-editor-row-1">
+            <div class="col-sm-10">
+              <div class="row ir-editor-row">
+                <div class="offset-sm-2 col-sm-10">
+                  <xed:bind xpath="enrollment-number">
+                    <input id="enrollmentNumber" type="text" class="form-control input-sm" />
+                  </xed:bind>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="enrollment-sequence-number">
+    <xed:bind xpath="box.enrollment-sequence-number[@class='MCRMetaLangText']">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="enrollmentSequenceNumber">
+          <xed:output i18n="cug.enrollmentSequenceNumber" />
+        </label>
+        <div class="col-sm-10">
+          <div class="row ir-editor-row ir-editor-row-1">
+            <div class="col-sm-10">
+              <div class="row ir-editor-row">
+                <div class="offset-sm-2 col-sm-10">
+                  <xed:bind xpath="enrollment-sequence-number">
+                    <input id="enrollmentSequenceNumber" type="text" class="form-control input-sm" />
+                  </xed:bind>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="guardian">
+    <xed:bind xpath="box.guardian[@class='MCRMetaLangText']">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="guardian">
+          <xed:output i18n="cug.guardian" />
+        </label>
+        <div class="col-sm-10">
+          <div class="row ir-editor-row ir-editor-row-1">
+            <div class="col-sm-10">
+              <div class="row ir-editor-row">
+                <div class="offset-sm-2 col-sm-10">
+                  <xed:bind xpath="guardian">
+                    <input id="guardian" type="text" class="form-control input-sm" />
+                  </xed:bind>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="origin">
+    <xed:bind xpath="box.origin[@class='MCRMetaXML']">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label input-sm ir-editor-label">
+          <xed:output i18n="cug.origin" />
+        </label>
+        <div class="col-sm-10">
+          <xed:bind xpath="origin">
+            <xed:cleanup-rule xpath="//box.origin/origin" relevant-if="string-length(text) &gt; 0" />
+            <xed:cleanup-rule xpath="//box.origin/origin/text" relevant-if="string-length(.) &gt; 0" />
+            <div class="row ir-editor-row ir-editor-row-1">
+              <div class="col-sm-10">
+                <div class="row ir-editor-row">
+                  <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint" for="origin">
+                    <xed:output i18n="OMD.profkat.hint.place" />
+                  </label>
+                  <xed:bind xpath="place">
+                    <div class="col-sm-4">
+                      <input id="origin" type="text" class="form-control input-sm" />
+                    </div>
+                    <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint" for="originId">
+                      <xed:output i18n="OMD.profkat.hint.geoid" />
+                    </label>
+                    <xed:bind xpath="@geoid">
+                      <div class="col-sm-4">
+                        <input id="originId" type="text" class="form-control input-sm" />
+                      </div>
+                    </xed:bind>
+                  </xed:bind>
+                </div>
+              </div>
+            </div>
+          </xed:bind>
+        </div>
+      </div>
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="name">
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label input-sm ir-editor-label">
+        <xed:output i18n="OMD.profkat.name" />
+      </label>
+      <xed:bind xpath="box.name[@class='MCRMetaPersonName']/name">
+        <div class="col-sm-10">
+          <div class="row">
+            <div class="col-sm-10">
+              <xed:bind xpath="surname">
+                <div class="row ir-editor-row">
+                  <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint" for="surname">
+                    <xed:output i18n="OMD.profkat.hint.nameSurname" />
+                  </label>
+                  <div class="col-sm-10">
+                    <input id="surname" type="text" class="form-control input-sm" />
+                  </div>
+                </div>
+              </xed:bind>
+              <xed:bind xpath="firstname">
+                <div class="row ir-editor-row">
+                  <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint" for="firstname">
+                    <xed:output i18n="OMD.profkat.hint.nameFirstname" />
+                  </label>
+                  <div class="col-sm-10">
+                    <input id="firstname" type="text" class="form-control input-sm" />
+                  </div>
+                </div>
+              </xed:bind>
+              <xed:bind xpath="prefix">
+                <div class="row ir-editor-row">
+                  <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint" for="namePrefix">
+                    <xed:output i18n="cug.name.prefix" />
+                  </label>
+                  <div class="col-sm-10">
+                    <input id="namePrefix" type="text" class="form-control input-sm" />
+                  </div>
+                </div>
+              </xed:bind>
+              <xed:bind xpath="academic">
+                <div class="row ir-editor-row">
+                  <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint" for="academicTitle">
+                    <xed:output i18n="cug.name.academicTitle" />
+                  </label>
+                  <div class="col-sm-10">
+                    <input id="academicTitle" type="text" class="form-control input-sm" />
+                  </div>
+                </div>
+              </xed:bind>
+            </div>
+          </div>
+        </div>
+      </xed:bind>
+    </div>
+  </xed:template>
+
+  <xed:template id="occupation">
+    <xed:bind xpath="box.occupation[@class='MCRMetaLangText']">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="occupation">
+          <xed:output i18n="cug.occupation" />
+        </label>
+        <div class="col-sm-10">
+          <div class="row ir-editor-row ir-editor-row-1">
+            <div class="col-sm-10">
+              <div class="row ir-editor-row">
+                <div class="offset-sm-2 col-sm-10">
+                  <xed:bind xpath="occupation">
+                    <input id="occupation" type="text" class="form-control input-sm" />
+                  </xed:bind>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="prior-studies">
+    <xed:bind xpath="box.prior-study[@class='MCRMetaXML']">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label input-sm ir-editor-label">
+          <xed:output i18n="cug.priorStudies" />
+        </label>
+        <div class="col-sm-10">
+          <xed:repeat xpath="prior-study">
+            <div class="row ir-editor-row ir-editor-row-1">
+              <div class="col-sm-10">
+                <div class="row ir-editor-row">
+                  <xed:bind xpath="text">
+                    <label
+                      class="col-sm-2 col-form-label input-sm ir-editor-label-hint"
+                      for="priorStudyText_{xed:generate-id()}">
+                      <xed:output i18n="OMD.profkat.hint.text" />
+                    </label>
+                    <div class="col-sm-10">
+                      <input id="priorStudyText_{xed:generate-id()}" type="text" class="form-control input-sm" />
+                    </div>
+                  </xed:bind>
+                </div>
+                <div class="row ir-editor-row">
+                  <xed:bind xpath="place">
+                    <label
+                      class="col-sm-2 col-form-label input-sm ir-editor-label-hint"
+                      for="priorStudyPlace_{xed:generate-id()}">
+                      <xed:output i18n="OMD.profkat.hint.place" />
+                    </label>
+                    <div class="col-sm-4">
+                      <input id="priorStudyPlace_{xed:generate-id()}" type="text" class="form-control input-sm" />
+                    </div>
+                    <xed:bind xpath="@geoid">
+                      <label
+                        class="col-sm-2 col-form-label input-sm ir-editor-label-hint"
+                        for="priorStudyPlaceId_{xed:generate-id()}">
+                        <xed:output i18n="OMD.profkat.hint.geoid" />
+                      </label>
+                      <div class="col-sm-4">
+                        <input id="priorStudyPlaceId_{xed:generate-id()}" type="text" class="form-control input-sm" />
+                      </div>
+                    </xed:bind>
+                  </xed:bind>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="btn-group btn-group-sm pull-right">
+                  <xed:controls />
+                </div>
+              </div>
+            </div>
+          </xed:repeat>
+        </div>
+      </div>
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="prior-enrollment">
+    <xed:bind xpath="box.prior-enrollment[@class='MCRMetaLinkID']">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="priorEnrollment">
+          <xed:output i18n="cug.priorEnrollment" />
+        </label>
+        <div class="col-sm-10">
+          <div class="row ir-editor-row ir-editor-row-1">
+            <div class="col-sm-10">
+              <div class="row ir-editor-row">
+                <div class="offset-sm-2 col-sm-10">
+                  <xed:bind xpath="prior-enrollment">
+                    <xed:bind xpath="@xlink:type" set="locator" />
+                    <div class="cug-picker cug-reference-picker" data-object-type="matrikel">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          id="priorEnrollment"
+                          class="form-control"
+                          autocomplete="off"
+                          name=""
+                          data-input=""
+                        />
+                        <span class="badge-slot input-group-text">
+                          <span data-badge="" class="badge text-bg-primary">
+                            <span class="far fa-times-circle" />
+                          </span>
+                        </span>
+                      </div>
+                      <xed:bind xpath="@xlink:href">
+                        <input type="hidden" data-href=""  />
+                      </xed:bind>
+                      <xed:bind xpath="@xlink:title">
+                        <input type="hidden" data-slot="title" data-title="" />
+                      </xed:bind>
+                    </div>
+                  </xed:bind>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </xed:bind>
+    <xed:cleanup-rule xpath="//prior-enrollment" relevant-if="(string-length(@xlink:href) &gt; 0)" />
+  </xed:template>
+
+  <xed:template id="school-certificate">
+    <xed:bind xpath="box.school-certificate[@class='MCRMetaXML']">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label input-sm ir-editor-label">
+          <xed:output i18n="cug.schoolCertificate" />
+        </label>
+        <div class="col-sm-10">
+          <xed:bind xpath="school-certificate">
+            <div class="row ir-editor-row ir-editor-row-1">
+              <div class="col-sm-10">
+                <div class="row ir-editor-row">
+                  <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint" for="schoolCertificateText">
+                    <xed:output i18n="OMD.profkat.hint.text" />
+                  </label>
+                  <xed:bind xpath="text">
+                    <div class="col-sm-10">
+                      <input id="schoolCertificateText" type="text" class="form-control input-sm" />
+                    </div>
+                  </xed:bind>
+                </div>
+                <div class="row ir-editor-row">
+                  <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint" for="schoolCertificatePlace">
+                    <xed:output i18n="OMD.profkat.hint.place" />
+                  </label>
+                  <xed:bind xpath="place">
+                    <div class="col-sm-4">
+                      <input id="schoolCertificatePlace" type="text" class="form-control input-sm" />
+                    </div>
+                    <label class="col-sm-2 col-form-label input-sm ir-editor-label-hint" for="schoolCertificatePlaceId">
+                      <xed:output i18n="OMD.profkat.hint.geoid" />
+                    </label>
+                    <xed:bind xpath="@geoid">
+                      <div class="col-sm-4">
+                        <input id="schoolCertificatePlaceId" type="text" class="form-control input-sm" />
+                      </div>
+                    </xed:bind>
+                  </xed:bind>
+                </div>
+              </div>
+            </div>
+          </xed:bind>
+        </div>
+      </div>
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="semester">
+    <xed:bind xpath="box.semester[@class='MCRMetaClassification']">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="semesterSelect">
+          <xed:output i18n="cug.semester" />
+        </label>
+        <div class="col-sm-10">
+          <xed:bind xpath="semester[@classid='cug_class_semester']">
+            <xed:cleanup-rule xpath="//box.semester/semester" relevant-if="@categid" />
+            <div class="row ir-editor-row ir-editor-row-1">
+              <div class="col-sm-10">
+                <div class="row ir-editor-row">
+                  <div class="offset-sm-2 col-sm-10">
+                    <xed:bind xpath="@categid">
+                      <div class="cug-picker cug-category-picker" data-classification-id="cug_class_semester">
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            id="semester_{xed:generate-id()}"
+                            class="form-control"
+                            autocomplete="off"
+                            name=""
+                            data-input=""
+                          />
+                          <span class="badge-slot input-group-text">
+                            <span data-badge="" class="badge text-bg-primary">
+                              <span class="far fa-times-circle" />
+                            </span>
+                          </span>
+                        </div>
+                        <input type="hidden" data-id="" />
+                      </div>
+                    </xed:bind>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2"></div>
+            </div>
+          </xed:bind>
+        </div>
+      </div>
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="record-content">
+    <xed:bind xpath="box.record-content[@class='MCRMetaLangText']">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="recordContentInfo">
+          <xed:output i18n="cug.record-content" />
+        </label>
+        <div class="col-sm-10">
+          <div class="row ir-editor-row ir-editor-row-1">
+            <div class="col-sm-10">
+              <div class="row ir-editor-row">
+                <div class="offset-sm-2 col-sm-10">
+                  <xed:bind xpath="record-content">
+                    <input id="recordContentInfo" type="text" class="form-control input-sm" />
+                  </xed:bind>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="fee">
+    <xed:bind xpath="box.fee[@class='MCRMetaLangText']">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label input-sm ir-editor-label" for="fee">
+          <xed:output i18n="cug.fee" />
+        </label>
+        <div class="col-sm-10">
+          <div class="row ir-editor-row ir-editor-row-1">
+            <div class="col-sm-10">
+              <div class="row ir-editor-row">
+                <div class="offset-sm-2 col-sm-10">
+                  <xed:bind xpath="fee">
+                    <input id="fee" type="text" class="form-control input-sm" />
+                  </xed:bind>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </xed:bind>
+  </xed:template>
+
+</xed:template>
