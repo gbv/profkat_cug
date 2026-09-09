@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass ID="cug_class_semester"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="MCRClassification.xsd">
+  <label xml:lang="de" text="Semester" description="Semester der Universität Göttingen" />
+  <categories>
+    <category ID="cug.wise_1734_35">
+      <label xml:lang="de" text="WiSe 1734-35" />
+      <label xml:lang="en" text="WiSe 1734-35" />
+    </category>
+    <category ID="cug.sose_1735">
+      <label xml:lang="de" text="SoSe 1735" />
+      <label xml:lang="en" text="SoSe 1735" />
+    </category>
+    <category ID="cug.wise_1735_36">
+      <label xml:lang="de" text="WiSe 1735-36" />
+      <label xml:lang="en" text="WiSe 1735-36" />
+    </category>
+    <category ID="cug.sose_1736">
+      <label xml:lang="de" text="SoSe 1736" />
+      <label xml:lang="en" text="SoSe 1736" />
+    </category>
+    <category ID="cug.wise_1736_37">
+      <label xml:lang="de" text="WiSe 1736-37" />
+      <label xml:lang="en" text="WiSe 1736-37" />
+    </category>
+    <category ID="cug.sose_1737">
+      <label xml:lang="de" text="SoSe 1737" />
+      <label xml:lang="en" text="SoSe 1737" />
+    </category>
+    <category ID="cug.wise_1737_38">
+      <label xml:lang="de" text="WiSe 1737-38" />
+      <label xml:lang="en" text="WiSe 1737-38" />
+    </category>
+    <category ID="cug.sose_1738">
+      <label xml:lang="de" text="SoSe 1738" />
+      <label xml:lang="en" text="SoSe 1738" />
+    </category>
+    <category ID="cug.wise_1738_39">
+      <label xml:lang="de" text="WiSe 1738-39" />
+      <label xml:lang="en" text="WiSe 1738-39" />
+    </category>
+    <category ID="cug.sose_1739">
+      <label xml:lang="de" text="SoSe 1739" />
+      <label xml:lang="en" text="SoSe 1739" />
+    </category>
+    <category ID="cug.wise_1739_40">
+      <label xml:lang="de" text="WiSe 1739-40" />
+      <label xml:lang="en" text="WiSe 1739-40" />
+    </category>
+    <category ID="cug.sose_1740">
+      <label xml:lang="de" text="SoSe 1740" />
+      <label xml:lang="en" text="SoSe 1740" />
+    </category>
+    <category ID="cug.wise_1740_41">
+      <label xml:lang="de" text="WiSe 1740-41" />
+      <label xml:lang="en" text="WiSe 1740-41" />
+    </category>
+    <category ID="cug.sose_1741">
+      <label xml:lang="de" text="SoSe 1741" />
+      <label xml:lang="en" text="SoSe 1741" />
+    </category>
+    <category ID="cug.wise_1741_42">
+      <label xml:lang="de" text="WiSe 1741-42" />
+      <label xml:lang="en" text="WiSe 1741-42" />
+    </category>
+    <category ID="cug.sose_1742">
+      <label xml:lang="de" text="SoSe 1742" />
+      <label xml:lang="en" text="SoSe 1742" />
+    </category>
+    <category ID="cug.wise_1742_43">
+      <label xml:lang="de" text="WiSe 1742-43" />
+      <label xml:lang="en" text="WiSe 1742-43" />
+    </category>
+    <category ID="cug.sose_1743">
+      <label xml:lang="de" text="SoSe 1743" />
+      <label xml:lang="en" text="SoSe 1743" />
+    </category>
+    <category ID="cug.wise_1743_44">
+      <label xml:lang="de" text="WiSe 1743-44" />
+      <label xml:lang="en" text="WiSe 1743-44" />
+    </category>
+    <category ID="cug.sose_1744">
+      <label xml:lang="de" text="SoSe 1744" />
+      <label xml:lang="en" text="SoSe 1744" />
+    </category>
+    <category ID="cug.wise_1744_45">
+      <label xml:lang="de" text="WiSe 1744-45" />
+      <label xml:lang="en" text="WiSe 1744-45" />
+    </category>
+    <category ID="cug.sose_1745">
+      <label xml:lang="de" text="SoSe 1745" />
+      <label xml:lang="en" text="SoSe 1745" />
+    </category>
+    <category ID="cug.wise_1745_46">
+      <label xml:lang="de" text="WiSe 1745-46" />
+      <label xml:lang="en" text="WiSe 1745-46" />
+    </category>
+    <category ID="cug.sose_1746">
+      <label xml:lang="de" text="SoSe 1746" />
+      <label xml:lang="en" text="SoSe 1746" />
+    </category>
+    <category ID="cug.wise_1746_47">
+      <label xml:lang="de" text="WiSe 1746-47" />
+      <label xml:lang="en" text="WiSe 1746-47" />
+    </category>
+    <category ID="cug.sose_1747">
+      <label xml:lang="de" text="SoSe 1747" />
+      <label xml:lang="en" text="SoSe 1747" />
+    </category>
+    <category ID="cug.wise_1747_48">
+      <label xml:lang="de" text="WiSe 1747-48" />
+      <label xml:lang="en" text="WiSe 1747-48" />
+    </category>
+    <category ID="cug.sose_1748">
+      <label xml:lang="de" text="SoSe 1748" />
+      <label xml:lang="en" text="SoSe 1748" />
+    </category>
+    <category ID="cug.wise_1748_49">
+      <label xml:lang="de" text="WiSe 1748-49" />
+      <label xml:lang="en" text="WiSe 1748-49" />
+    </category>
+    <category ID="cug.sose_1749">
+      <label xml:lang="de" text="SoSe 1749" />
+      <label xml:lang="en" text="SoSe 1749" />
+    </category>
+    <category ID="cug.wise_1749_50">
+      <label xml:lang="de" text="WiSe 1749-50" />
+      <label xml:lang="en" text="WiSe 1749-50" />
+    </category>
+    <category ID="cug.sose_1750">
+      <label xml:lang="de" text="SoSe 1750" />
+      <label xml:lang="en" text="SoSe 1750" />
+    </category>
+    <category ID="cug.wise_1750_51">
+      <label xml:lang="de" text="WiSe 1750-51" />
+      <label xml:lang="en" text="WiSe 1750-51" />
+    </category>
+    <category ID="cug.sose_1751">
+      <label xml:lang="de" text="SoSe 1751" />
+      <label xml:lang="en" text="SoSe 1751" />
+    </category>
+    <category ID="cug.wise_1751_52">
+      <label xml:lang="de" text="WiSe 1751-52" />
+      <label xml:lang="en" text="WiSe 1751-52" />
+    </category>
+    <category ID="cug.sose_1752">
+      <label xml:lang="de" text="SoSe 1752" />
+      <label xml:lang="en" text="SoSe 1752" />
+    </category>
+    <category ID="cug.wise_1752_53">
+      <label xml:lang="de" text="WiSe 1752-53" />
+      <label xml:lang="en" text="WiSe 1752-53" />
+    </category>
+    <category ID="cug.sose_1753">
+      <label xml:lang="de" text="SoSe 1753" />
+      <label xml:lang="en" text="SoSe 1753" />
+    </category>
+    <category ID="cug.wise_1753_54">
+      <label xml:lang="de" text="WiSe 1753-54" />
+      <label xml:lang="en" text="WiSe 1753-54" />
+    </category>
+    <category ID="cug.sose_1754">
+      <label xml:lang="de" text="SoSe 1754" />
+      <label xml:lang="en" text="SoSe 1754" />
+    </category>
+    <category ID="cug.wise_1754_55">
+      <label xml:lang="de" text="WiSe 1754-55" />
+      <label xml:lang="en" text="WiSe 1754-55" />
+    </category>
+    <category ID="cug.sose_1755">
+      <label xml:lang="de" text="SoSe 1755" />
+      <label xml:lang="en" text="SoSe 1755" />
+    </category>
+    <category ID="cug.wise_1755_56">
+      <label xml:lang="de" text="WiSe 1755-56" />
+      <label xml:lang="en" text="WiSe 1755-56" />
+    </category>
+    <category ID="cug.sose_1756">
+      <label xml:lang="de" text="SoSe 1756" />
+      <label xml:lang="en" text="SoSe 1756" />
+    </category>
+    <category ID="cug.wise_1756_57">
+      <label xml:lang="de" text="WiSe 1756-57" />
+      <label xml:lang="en" text="WiSe 1756-57" />
+    </category>
+    <category ID="cug.sose_1757">
+      <label xml:lang="de" text="SoSe 1757" />
+      <label xml:lang="en" text="SoSe 1757" />
+    </category>
+    <category ID="cug.wise_1757_58">
+      <label xml:lang="de" text="WiSe 1757-58" />
+      <label xml:lang="en" text="WiSe 1757-58" />
+    </category>
+    <category ID="cug.sose_1758">
+      <label xml:lang="de" text="SoSe 1758" />
+      <label xml:lang="en" text="SoSe 1758" />
+    </category>
+    <category ID="cug.wise_1758_59">
+      <label xml:lang="de" text="WiSe 1758-59" />
+      <label xml:lang="en" text="WiSe 1758-59" />
+    </category>
+    <category ID="cug.sose_1759">
+      <label xml:lang="de" text="SoSe 1759" />
+      <label xml:lang="en" text="SoSe 1759" />
+    </category>
+    <category ID="cug.wise_1759_60">
+      <label xml:lang="de" text="WiSe 1759-60" />
+      <label xml:lang="en" text="WiSe 1759-60" />
+    </category>
+    <category ID="cug.sose_1760">
+      <label xml:lang="de" text="SoSe 1760" />
+      <label xml:lang="en" text="SoSe 1760" />
+    </category>
+    <category ID="cug.wise_1760_61">
+      <label xml:lang="de" text="WiSe 1760-61" />
+      <label xml:lang="en" text="WiSe 1760-61" />
+    </category>
+    <category ID="cug.sose_1761">
+      <label xml:lang="de" text="SoSe 1761" />
+      <label xml:lang="en" text="SoSe 1761" />
+    </category>
+    <category ID="cug.wise_1761_62">
+      <label xml:lang="de" text="WiSe 1761-62" />
+      <label xml:lang="en" text="WiSe 1761-62" />
+    </category>
+    <category ID="cug.sose_1762">
+      <label xml:lang="de" text="SoSe 1762" />
+      <label xml:lang="en" text="SoSe 1762" />
+    </category>
+    <category ID="cug.wise_1762_63">
+      <label xml:lang="de" text="WiSe 1762-63" />
+      <label xml:lang="en" text="WiSe 1762-63" />
+    </category>
+    <category ID="cug.sose_1763">
+      <label xml:lang="de" text="SoSe 1763" />
+      <label xml:lang="en" text="SoSe 1763" />
+    </category>
+    <category ID="cug.wise_1763_64">
+      <label xml:lang="de" text="WiSe 1763-64" />
+      <label xml:lang="en" text="WiSe 1763-64" />
+    </category>
+    <category ID="cug.sose_1764">
+      <label xml:lang="de" text="SoSe 1764" />
+      <label xml:lang="en" text="SoSe 1764" />
+    </category>
+    <category ID="cug.wise_1764_65">
+      <label xml:lang="de" text="WiSe 1764-65" />
+      <label xml:lang="en" text="WiSe 1764-65" />
+    </category>
+    <category ID="cug.sose_1765">
+      <label xml:lang="de" text="SoSe 1765" />
+      <label xml:lang="en" text="SoSe 1765" />
+    </category>
+    <category ID="cug.wise_1765_66">
+      <label xml:lang="de" text="WiSe 1765-66" />
+      <label xml:lang="en" text="WiSe 1765-66" />
+    </category>
+    <category ID="cug.sose_1766">
+      <label xml:lang="de" text="SoSe 1766" />
+      <label xml:lang="en" text="SoSe 1766" />
+    </category>
+    <category ID="cug.wise_1766_67">
+      <label xml:lang="de" text="WiSe 1766-67" />
+      <label xml:lang="en" text="WiSe 1766-67" />
+    </category>
+    <category ID="cug.sose_1767">
+      <label xml:lang="de" text="SoSe 1767" />
+      <label xml:lang="en" text="SoSe 1767" />
+    </category>
+    <category ID="cug.wise_1767_68">
+      <label xml:lang="de" text="WiSe 1767-68" />
+      <label xml:lang="en" text="WiSe 1767-68" />
+    </category>
+    <category ID="cug.sose_1768">
+      <label xml:lang="de" text="SoSe 1768" />
+      <label xml:lang="en" text="SoSe 1768" />
+    </category>
+    <category ID="cug.wise_1768_69">
+      <label xml:lang="de" text="WiSe 1768-69" />
+      <label xml:lang="en" text="WiSe 1768-69" />
+    </category>
+    <category ID="cug.sose_1769">
+      <label xml:lang="de" text="SoSe 1769" />
+      <label xml:lang="en" text="SoSe 1769" />
+    </category>
+    <category ID="cug.wise_1769_70">
+      <label xml:lang="de" text="WiSe 1769-70" />
+      <label xml:lang="en" text="WiSe 1769-70" />
+    </category>
+    <category ID="cug.sose_1770">
+      <label xml:lang="de" text="SoSe 1770" />
+      <label xml:lang="en" text="SoSe 1770" />
+    </category>
+    <category ID="cug.wise_1770_71">
+      <label xml:lang="de" text="WiSe 1770-71" />
+      <label xml:lang="en" text="WiSe 1770-71" />
+    </category>
+    <category ID="cug.sose_1771">
+      <label xml:lang="de" text="SoSe 1771" />
+      <label xml:lang="en" text="SoSe 1771" />
+    </category>
+    <category ID="cug.wise_1771_72">
+      <label xml:lang="de" text="WiSe 1771-72" />
+      <label xml:lang="en" text="WiSe 1771-72" />
+    </category>
+    <category ID="cug.sose_1772">
+      <label xml:lang="de" text="SoSe 1772" />
+      <label xml:lang="en" text="SoSe 1772" />
+    </category>
+    <category ID="cug.wise_1772_73">
+      <label xml:lang="de" text="WiSe 1772-73" />
+      <label xml:lang="en" text="WiSe 1772-73" />
+    </category>
+    <category ID="cug.sose_1773">
+      <label xml:lang="de" text="SoSe 1773" />
+      <label xml:lang="en" text="SoSe 1773" />
+    </category>
+    <category ID="cug.wise_1773_74">
+      <label xml:lang="de" text="WiSe 1773-74" />
+      <label xml:lang="en" text="WiSe 1773-74" />
+    </category>
+    <category ID="cug.sose_1774">
+      <label xml:lang="de" text="SoSe 1774" />
+      <label xml:lang="en" text="SoSe 1774" />
+    </category>
+    <category ID="cug.wise_1774_75">
+      <label xml:lang="de" text="WiSe 1774-75" />
+      <label xml:lang="en" text="WiSe 1774-75" />
+    </category>
+    <category ID="cug.sose_1775">
+      <label xml:lang="de" text="SoSe 1775" />
+      <label xml:lang="en" text="SoSe 1775" />
+    </category>
+    <category ID="cug.wise_1775_76">
+      <label xml:lang="de" text="WiSe 1775-76" />
+      <label xml:lang="en" text="WiSe 1775-76" />
+    </category>
+    <category ID="cug.sose_1776">
+      <label xml:lang="de" text="SoSe 1776" />
+      <label xml:lang="en" text="SoSe 1776" />
+    </category>
+    <category ID="cug.wise_1776_77">
+      <label xml:lang="de" text="WiSe 1776-77" />
+      <label xml:lang="en" text="WiSe 1776-77" />
+    </category>
+    <category ID="cug.sose_1777">
+      <label xml:lang="de" text="SoSe 1777" />
+      <label xml:lang="en" text="SoSe 1777" />
+    </category>
+    <category ID="cug.wise_1777_78">
+      <label xml:lang="de" text="WiSe 1777-78" />
+      <label xml:lang="en" text="WiSe 1777-78" />
+    </category>
+    <category ID="cug.sose_1778">
+      <label xml:lang="de" text="SoSe 1778" />
+      <label xml:lang="en" text="SoSe 1778" />
+    </category>
+    <category ID="cug.wise_1778_79">
+      <label xml:lang="de" text="WiSe 1778-79" />
+      <label xml:lang="en" text="WiSe 1778-79" />
+    </category>
+    <category ID="cug.sose_1779">
+      <label xml:lang="de" text="SoSe 1779" />
+      <label xml:lang="en" text="SoSe 1779" />
+    </category>
+    <category ID="cug.wise_1779_80">
+      <label xml:lang="de" text="WiSe 1779-80" />
+      <label xml:lang="en" text="WiSe 1779-80" />
+    </category>
+    <category ID="cug.sose_1780">
+      <label xml:lang="de" text="SoSe 1780" />
+      <label xml:lang="en" text="SoSe 1780" />
+    </category>
+    <category ID="cug.wise_1780_81">
+      <label xml:lang="de" text="WiSe 1780-81" />
+      <label xml:lang="en" text="WiSe 1780-81" />
+    </category>
+    <category ID="cug.sose_1781">
+      <label xml:lang="de" text="SoSe 1781" />
+      <label xml:lang="en" text="SoSe 1781" />
+    </category>
+    <category ID="cug.wise_1781_82">
+      <label xml:lang="de" text="WiSe 1781-82" />
+      <label xml:lang="en" text="WiSe 1781-82" />
+    </category>
+    <category ID="cug.sose_1782">
+      <label xml:lang="de" text="SoSe 1782" />
+      <label xml:lang="en" text="SoSe 1782" />
+    </category>
+    <category ID="cug.wise_1782_83">
+      <label xml:lang="de" text="WiSe 1782-83" />
+      <label xml:lang="en" text="WiSe 1782-83" />
+    </category>
+    <category ID="cug.sose_1783">
+      <label xml:lang="de" text="SoSe 1783" />
+      <label xml:lang="en" text="SoSe 1783" />
+    </category>
+    <category ID="cug.wise_1783_84">
+      <label xml:lang="de" text="WiSe 1783-84" />
+      <label xml:lang="en" text="WiSe 1783-84" />
+    </category>
+    <category ID="cug.sose_1784">
+      <label xml:lang="de" text="SoSe 1784" />
+      <label xml:lang="en" text="SoSe 1784" />
+    </category>
+    <category ID="cug.wise_1784_85">
+      <label xml:lang="de" text="WiSe 1784-85" />
+      <label xml:lang="en" text="WiSe 1784-85" />
+    </category>
+    <category ID="cug.sose_1785">
+      <label xml:lang="de" text="SoSe 1785" />
+      <label xml:lang="en" text="SoSe 1785" />
+    </category>
+    <category ID="cug.wise_1785_86">
+      <label xml:lang="de" text="WiSe 1785-86" />
+      <label xml:lang="en" text="WiSe 1785-86" />
+    </category>
+    <category ID="cug.sose_1786">
+      <label xml:lang="de" text="SoSe 1786" />
+      <label xml:lang="en" text="SoSe 1786" />
+    </category>
+    <category ID="cug.wise_1786_87">
+      <label xml:lang="de" text="WiSe 1786-87" />
+      <label xml:lang="en" text="WiSe 1786-87" />
+    </category>
+    <category ID="cug.sose_1787">
+      <label xml:lang="de" text="SoSe 1787" />
+      <label xml:lang="en" text="SoSe 1787" />
+    </category>
+    <category ID="cug.wise_1787_88">
+      <label xml:lang="de" text="WiSe 1787-88" />
+      <label xml:lang="en" text="WiSe 1787-88" />
+    </category>
+    <category ID="cug.sose_1788">
+      <label xml:lang="de" text="SoSe 1788" />
+      <label xml:lang="en" text="SoSe 1788" />
+    </category>
+    <category ID="cug.wise_1788_89">
+      <label xml:lang="de" text="WiSe 1788-89" />
+      <label xml:lang="en" text="WiSe 1788-89" />
+    </category>
+    <category ID="cug.sose_1789">
+      <label xml:lang="de" text="SoSe 1789" />
+      <label xml:lang="en" text="SoSe 1789" />
+    </category>
+    <category ID="cug.wise_1789_90">
+      <label xml:lang="de" text="WiSe 1789-90" />
+      <label xml:lang="en" text="WiSe 1789-90" />
+    </category>
+    <category ID="cug.sose_1790">
+      <label xml:lang="de" text="SoSe 1790" />
+      <label xml:lang="en" text="SoSe 1790" />
+    </category>
+    <category ID="cug.wise_1790_91">
+      <label xml:lang="de" text="WiSe 1790-91" />
+      <label xml:lang="en" text="WiSe 1790-91" />
+    </category>
+    <category ID="cug.sose_1791">
+      <label xml:lang="de" text="SoSe 1791" />
+      <label xml:lang="en" text="SoSe 1791" />
+    </category>
+    <category ID="cug.wise_1791_92">
+      <label xml:lang="de" text="WiSe 1791-92" />
+      <label xml:lang="en" text="WiSe 1791-92" />
+    </category>
+    <category ID="cug.sose_1792">
+      <label xml:lang="de" text="SoSe 1792" />
+      <label xml:lang="en" text="SoSe 1792" />
+    </category>
+    <category ID="cug.wise_1792_93">
+      <label xml:lang="de" text="WiSe 1792-93" />
+      <label xml:lang="en" text="WiSe 1792-93" />
+    </category>
+    <category ID="cug.sose_1793">
+      <label xml:lang="de" text="SoSe 1793" />
+      <label xml:lang="en" text="SoSe 1793" />
+    </category>
+    <category ID="cug.wise_1793_94">
+      <label xml:lang="de" text="WiSe 1793-94" />
+      <label xml:lang="en" text="WiSe 1793-94" />
+    </category>
+    <category ID="cug.sose_1794">
+      <label xml:lang="de" text="SoSe 1794" />
+      <label xml:lang="en" text="SoSe 1794" />
+    </category>
+    <category ID="cug.wise_1794_95">
+      <label xml:lang="de" text="WiSe 1794-95" />
+      <label xml:lang="en" text="WiSe 1794-95" />
+    </category>
+    <category ID="cug.sose_1795">
+      <label xml:lang="de" text="SoSe 1795" />
+      <label xml:lang="en" text="SoSe 1795" />
+    </category>
+    <category ID="cug.wise_1795_96">
+      <label xml:lang="de" text="WiSe 1795-96" />
+      <label xml:lang="en" text="WiSe 1795-96" />
+    </category>
+    <category ID="cug.sose_1796">
+      <label xml:lang="de" text="SoSe 1796" />
+      <label xml:lang="en" text="SoSe 1796" />
+    </category>
+    <category ID="cug.wise_1796_97">
+      <label xml:lang="de" text="WiSe 1796-97" />
+      <label xml:lang="en" text="WiSe 1796-97" />
+    </category>
+    <category ID="cug.sose_1797">
+      <label xml:lang="de" text="SoSe 1797" />
+      <label xml:lang="en" text="SoSe 1797" />
+    </category>
+    <category ID="cug.wise_1797_98">
+      <label xml:lang="de" text="WiSe 1797-98" />
+      <label xml:lang="en" text="WiSe 1797-98" />
+    </category>
+    <category ID="cug.sose_1798">
+      <label xml:lang="de" text="SoSe 1798" />
+      <label xml:lang="en" text="SoSe 1798" />
+    </category>
+    <category ID="cug.wise_1798_99">
+      <label xml:lang="de" text="WiSe 1798-99" />
+      <label xml:lang="en" text="WiSe 1798-99" />
+    </category>
+    <category ID="cug.sose_1799">
+      <label xml:lang="de" text="SoSe 1799" />
+      <label xml:lang="en" text="SoSe 1799" />
+    </category>
+    <category ID="cug.wise_1799_00">
+      <label xml:lang="de" text="WiSe 1799-00" />
+      <label xml:lang="en" text="WiSe 1799-00" />
+    </category>
+    <category ID="cug.sose_1800">
+      <label xml:lang="de" text="SoSe 1800" />
+      <label xml:lang="en" text="SoSe 1800" />
+    </category>
+    <category ID="cug.wise_1800_01">
+      <label xml:lang="de" text="WiSe 1800-01" />
+      <label xml:lang="en" text="WiSe 1800-01" />
+    </category>
+    <category ID="cug.sose_1801">
+      <label xml:lang="de" text="SoSe 1801" />
+      <label xml:lang="en" text="SoSe 1801" />
+    </category>
+    <category ID="cug.wise_1801_02">
+      <label xml:lang="de" text="WiSe 1801-02" />
+      <label xml:lang="en" text="WiSe 1801-02" />
+    </category>
+    <category ID="cug.sose_1802">
+      <label xml:lang="de" text="SoSe 1802" />
+      <label xml:lang="en" text="SoSe 1802" />
+    </category>
+    <category ID="cug.wise_1802_03">
+      <label xml:lang="de" text="WiSe 1802-03" />
+      <label xml:lang="en" text="WiSe 1802-03" />
+    </category>
+    <category ID="cug.sose_1803">
+      <label xml:lang="de" text="SoSe 1803" />
+      <label xml:lang="en" text="SoSe 1803" />
+    </category>
+    <category ID="cug.wise_1803_04">
+      <label xml:lang="de" text="WiSe 1803-04" />
+      <label xml:lang="en" text="WiSe 1803-04" />
+    </category>
+    <category ID="cug.sose_1804">
+      <label xml:lang="de" text="SoSe 1804" />
+      <label xml:lang="en" text="SoSe 1804" />
+    </category>
+    <category ID="cug.wise_1804_05">
+      <label xml:lang="de" text="WiSe 1804-05" />
+      <label xml:lang="en" text="WiSe 1804-05" />
+    </category>
+    <category ID="cug.sose_1805">
+      <label xml:lang="de" text="SoSe 1805" />
+      <label xml:lang="en" text="SoSe 1805" />
+    </category>
+    <category ID="cug.wise_1805_06">
+      <label xml:lang="de" text="WiSe 1805-06" />
+      <label xml:lang="en" text="WiSe 1805-06" />
+    </category>
+    <category ID="cug.sose_1806">
+      <label xml:lang="de" text="SoSe 1806" />
+      <label xml:lang="en" text="SoSe 1806" />
+    </category>
+    <category ID="cug.wise_1806_07">
+      <label xml:lang="de" text="WiSe 1806-07" />
+      <label xml:lang="en" text="WiSe 1806-07" />
+    </category>
+    <category ID="cug.sose_1807">
+      <label xml:lang="de" text="SoSe 1807" />
+      <label xml:lang="en" text="SoSe 1807" />
+    </category>
+    <category ID="cug.wise_1807_08">
+      <label xml:lang="de" text="WiSe 1807-08" />
+      <label xml:lang="en" text="WiSe 1807-08" />
+    </category>
+    <category ID="cug.sose_1808">
+      <label xml:lang="de" text="SoSe 1808" />
+      <label xml:lang="en" text="SoSe 1808" />
+    </category>
+    <category ID="cug.wise_1808_09">
+      <label xml:lang="de" text="WiSe 1808-09" />
+      <label xml:lang="en" text="WiSe 1808-09" />
+    </category>
+    <category ID="cug.sose_1809">
+      <label xml:lang="de" text="SoSe 1809" />
+      <label xml:lang="en" text="SoSe 1809" />
+    </category>
+    <category ID="cug.wise_1809_10">
+      <label xml:lang="de" text="WiSe 1809-10" />
+      <label xml:lang="en" text="WiSe 1809-10" />
+    </category>
+    <category ID="cug.sose_1810">
+      <label xml:lang="de" text="SoSe 1810" />
+      <label xml:lang="en" text="SoSe 1810" />
+    </category>
+    <category ID="cug.wise_1810_11">
+      <label xml:lang="de" text="WiSe 1810-11" />
+      <label xml:lang="en" text="WiSe 1810-11" />
+    </category>
+    <category ID="cug.sose_1811">
+      <label xml:lang="de" text="SoSe 1811" />
+      <label xml:lang="en" text="SoSe 1811" />
+    </category>
+    <category ID="cug.wise_1811_12">
+      <label xml:lang="de" text="WiSe 1811-12" />
+      <label xml:lang="en" text="WiSe 1811-12" />
+    </category>
+    <category ID="cug.sose_1812">
+      <label xml:lang="de" text="SoSe 1812" />
+      <label xml:lang="en" text="SoSe 1812" />
+    </category>
+    <category ID="cug.wise_1812_13">
+      <label xml:lang="de" text="WiSe 1812-13" />
+      <label xml:lang="en" text="WiSe 1812-13" />
+    </category>
+    <category ID="cug.sose_1813">
+      <label xml:lang="de" text="SoSe 1813" />
+      <label xml:lang="en" text="SoSe 1813" />
+    </category>
+    <category ID="cug.wise_1813_14">
+      <label xml:lang="de" text="WiSe 1813-14" />
+      <label xml:lang="en" text="WiSe 1813-14" />
+    </category>
+    <category ID="cug.sose_1814">
+      <label xml:lang="de" text="SoSe 1814" />
+      <label xml:lang="en" text="SoSe 1814" />
+    </category>
+    <category ID="cug.wise_1814_15">
+      <label xml:lang="de" text="WiSe 1814-15" />
+      <label xml:lang="en" text="WiSe 1814-15" />
+    </category>
+    <category ID="cug.sose_1815">
+      <label xml:lang="de" text="SoSe 1815" />
+      <label xml:lang="en" text="SoSe 1815" />
+    </category>
+    <category ID="cug.wise_1815_16">
+      <label xml:lang="de" text="WiSe 1815-16" />
+      <label xml:lang="en" text="WiSe 1815-16" />
+    </category>
+    <category ID="cug.sose_1816">
+      <label xml:lang="de" text="SoSe 1816" />
+      <label xml:lang="en" text="SoSe 1816" />
+    </category>
+    <category ID="cug.wise_1816_17">
+      <label xml:lang="de" text="WiSe 1816-17" />
+      <label xml:lang="en" text="WiSe 1816-17" />
+    </category>
+    <category ID="cug.sose_1817">
+      <label xml:lang="de" text="SoSe 1817" />
+      <label xml:lang="en" text="SoSe 1817" />
+    </category>
+    <category ID="cug.wise_1817_18">
+      <label xml:lang="de" text="WiSe 1817-18" />
+      <label xml:lang="en" text="WiSe 1817-18" />
+    </category>
+    <category ID="cug.sose_1818">
+      <label xml:lang="de" text="SoSe 1818" />
+      <label xml:lang="en" text="SoSe 1818" />
+    </category>
+    <category ID="cug.wise_1818_19">
+      <label xml:lang="de" text="WiSe 1818-19" />
+      <label xml:lang="en" text="WiSe 1818-19" />
+    </category>
+    <category ID="cug.sose_1819">
+      <label xml:lang="de" text="SoSe 1819" />
+      <label xml:lang="en" text="SoSe 1819" />
+    </category>
+    <category ID="cug.wise_1819_20">
+      <label xml:lang="de" text="WiSe 1819-20" />
+      <label xml:lang="en" text="WiSe 1819-20" />
+    </category>
+    <category ID="cug.sose_1820">
+      <label xml:lang="de" text="SoSe 1820" />
+      <label xml:lang="en" text="SoSe 1820" />
+    </category>
+    <category ID="cug.wise_1820_21">
+      <label xml:lang="de" text="WiSe 1820-21" />
+      <label xml:lang="en" text="WiSe 1820-21" />
+    </category>
+    <category ID="cug.sose_1821">
+      <label xml:lang="de" text="SoSe 1821" />
+      <label xml:lang="en" text="SoSe 1821" />
+    </category>
+    <category ID="cug.wise_1821_22">
+      <label xml:lang="de" text="WiSe 1821-22" />
+      <label xml:lang="en" text="WiSe 1821-22" />
+    </category>
+    <category ID="cug.sose_1822">
+      <label xml:lang="de" text="SoSe 1822" />
+      <label xml:lang="en" text="SoSe 1822" />
+    </category>
+    <category ID="cug.wise_1822_23">
+      <label xml:lang="de" text="WiSe 1822-23" />
+      <label xml:lang="en" text="WiSe 1822-23" />
+    </category>
+    <category ID="cug.sose_1823">
+      <label xml:lang="de" text="SoSe 1823" />
+      <label xml:lang="en" text="SoSe 1823" />
+    </category>
+    <category ID="cug.wise_1823_24">
+      <label xml:lang="de" text="WiSe 1823-24" />
+      <label xml:lang="en" text="WiSe 1823-24" />
+    </category>
+    <category ID="cug.sose_1824">
+      <label xml:lang="de" text="SoSe 1824" />
+      <label xml:lang="en" text="SoSe 1824" />
+    </category>
+    <category ID="cug.wise_1824_25">
+      <label xml:lang="de" text="WiSe 1824-25" />
+      <label xml:lang="en" text="WiSe 1824-25" />
+    </category>
+    <category ID="cug.sose_1825">
+      <label xml:lang="de" text="SoSe 1825" />
+      <label xml:lang="en" text="SoSe 1825" />
+    </category>
+    <category ID="cug.wise_1825_26">
+      <label xml:lang="de" text="WiSe 1825-26" />
+      <label xml:lang="en" text="WiSe 1825-26" />
+    </category>
+    <category ID="cug.sose_1826">
+      <label xml:lang="de" text="SoSe 1826" />
+      <label xml:lang="en" text="SoSe 1826" />
+    </category>
+    <category ID="cug.wise_1826_27">
+      <label xml:lang="de" text="WiSe 1826-27" />
+      <label xml:lang="en" text="WiSe 1826-27" />
+    </category>
+    <category ID="cug.sose_1827">
+      <label xml:lang="de" text="SoSe 1827" />
+      <label xml:lang="en" text="SoSe 1827" />
+    </category>
+    <category ID="cug.wise_1827_28">
+      <label xml:lang="de" text="WiSe 1827-28" />
+      <label xml:lang="en" text="WiSe 1827-28" />
+    </category>
+    <category ID="cug.sose_1828">
+      <label xml:lang="de" text="SoSe 1828" />
+      <label xml:lang="en" text="SoSe 1828" />
+    </category>
+    <category ID="cug.wise_1828_29">
+      <label xml:lang="de" text="WiSe 1828-29" />
+      <label xml:lang="en" text="WiSe 1828-29" />
+    </category>
+    <category ID="cug.sose_1829">
+      <label xml:lang="de" text="SoSe 1829" />
+      <label xml:lang="en" text="SoSe 1829" />
+    </category>
+    <category ID="cug.wise_1829_30">
+      <label xml:lang="de" text="WiSe 1829-30" />
+      <label xml:lang="en" text="WiSe 1829-30" />
+    </category>
+    <category ID="cug.sose_1830">
+      <label xml:lang="de" text="SoSe 1830" />
+      <label xml:lang="en" text="SoSe 1830" />
+    </category>
+    <category ID="cug.wise_1830_31">
+      <label xml:lang="de" text="WiSe 1830-31" />
+      <label xml:lang="en" text="WiSe 1830-31" />
+    </category>
+    <category ID="cug.sose_1831">
+      <label xml:lang="de" text="SoSe 1831" />
+      <label xml:lang="en" text="SoSe 1831" />
+    </category>
+    <category ID="cug.wise_1831_32">
+      <label xml:lang="de" text="WiSe 1831-32" />
+      <label xml:lang="en" text="WiSe 1831-32" />
+    </category>
+    <category ID="cug.sose_1832">
+      <label xml:lang="de" text="SoSe 1832" />
+      <label xml:lang="en" text="SoSe 1832" />
+    </category>
+    <category ID="cug.wise_1832_33">
+      <label xml:lang="de" text="WiSe 1832-33" />
+      <label xml:lang="en" text="WiSe 1832-33" />
+    </category>
+    <category ID="cug.sose_1833">
+      <label xml:lang="de" text="SoSe 1833" />
+      <label xml:lang="en" text="SoSe 1833" />
+    </category>
+    <category ID="cug.wise_1833_34">
+      <label xml:lang="de" text="WiSe 1833-34" />
+      <label xml:lang="en" text="WiSe 1833-34" />
+    </category>
+    <category ID="cug.sose_1834">
+      <label xml:lang="de" text="SoSe 1834" />
+      <label xml:lang="en" text="SoSe 1834" />
+    </category>
+    <category ID="cug.wise_1834_35">
+      <label xml:lang="de" text="WiSe 1834-35" />
+      <label xml:lang="en" text="WiSe 1834-35" />
+    </category>
+    <category ID="cug.sose_1835">
+      <label xml:lang="de" text="SoSe 1835" />
+      <label xml:lang="en" text="SoSe 1835" />
+    </category>
+    <category ID="cug.wise_1835_36">
+      <label xml:lang="de" text="WiSe 1835-36" />
+      <label xml:lang="en" text="WiSe 1835-36" />
+    </category>
+    <category ID="cug.sose_1836">
+      <label xml:lang="de" text="SoSe 1836" />
+      <label xml:lang="en" text="SoSe 1836" />
+    </category>
+    <category ID="cug.wise_1836_37">
+      <label xml:lang="de" text="WiSe 1836-37" />
+      <label xml:lang="en" text="WiSe 1836-37" />
+    </category>
+    <category ID="cug.sose_1837">
+      <label xml:lang="de" text="SoSe 1837" />
+      <label xml:lang="en" text="SoSe 1837" />
+    </category>
+    <category ID="cug.wise_1837_38">
+      <label xml:lang="de" text="WiSe 1837-38" />
+      <label xml:lang="en" text="WiSe 1837-38" />
+    </category>
+  </categories>
+</mycoreclass>

@@ -25,6 +25,10 @@
           <label xml:lang="en" text="edit professorum objects" />
           <label xml:lang="de" text="Datensatz einer Person" />
         </category>
+      <category ID="wf_edit_profkat-matrikel">
+        <label xml:lang="en" text="edit matrikel objects" />
+        <label xml:lang="de" text="Datensatz einer Matrikel" />
+      </category>
 	    <category ID="restapi">
 			<label xml:lang="de" text="Schreibender Zugriff für REST-API"/>
 			<label xml:lang="en" text="Write Access to REST-API"/>

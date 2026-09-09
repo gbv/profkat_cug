@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<navigations xmlns="http://www.mycore.org/jspdocportal/navigation"
+<navigations
+  xmlns="http://www.mycore.org/jspdocportal/navigation"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.mycore.org/jspdocportal/navigation navigation.xsd">
 
-  <navigation id="main">
-    <navitem id="start" i18n="Nav.Start" href="" />
-    <navitem id="indexbrowser_profname" i18n="Nav.Profkat.Index" href="do/indexbrowser/profname" />
-    <navitem id="search" i18n="Nav.Profkat.Search" href="do/search/profkat-bar" />
-    <navitem id="ueber_uns" i18n="Nav.Profkat.AboutUs" href="site/ueber_uns?info=info.kontakt" />
-  </navigation>
-
   <navigation id="top">
     <navitem id="start" i18n="Nav.Start" href="" />
-    <navitem id="login" i18n="Nav.Login" href="do/login" hidden="true" />
-    <navitem id="logout" i18n="Nav.Logout" href="do/login?logout=true" hidden="true" />
-    <navitem id="impressum" i18n="Nav.Impressum" href="site/impressum" hidden="true" />
   </navigation>
 
   <navigation id="search">
-      <navitem id="search_profkat-bar" i18n="Nav.Profkat.Search" href="do/search/profkat-bar">
-        <navitem id="search_profkat-simple" i18n="Nav.Profkat.Search.Simple" href="do/search/profkat-simple" />
-        <navitem id="search_profkat-extended" i18n="Nav.Profkat.Search.Extended" href="do/search/profkat-extended" />
-        <navitem id="classbrowser_subject" i18n="Nav.Profkat.Search.Subject" href="do/classbrowser/subject" />
-        <navitem id="classbrowser_institution" i18n="Nav.Profkat.Search.Institution" href="do/classbrowser/institution" />
-        <navitem id="classbrowser_epoch" i18n="Nav.Profkat.Search.Epoch" href="do/classbrowser/epoch" />
-      </navitem>
+    <navitem id="search_profkat-bar" i18n="Nav.Profkat.Search" href="do/search/profkat-bar">
+      <navitem id="search_profkat-simple" i18n="Nav.Profkat.Search.Simple" href="do/search/profkat-simple" />
+      <navitem id="search_profkat-extended" i18n="Nav.Profkat.Search.Extended" href="do/search/profkat-extended" />
+      <navitem id="classbrowser_subject" i18n="Nav.Profkat.Search.Subject" href="do/classbrowser/subject" />
+      <navitem id="classbrowser_institution" i18n="Nav.Profkat.Search.Institution" href="do/classbrowser/institution" />
+      <navitem id="classbrowser_epoch" i18n="Nav.Profkat.Search.Epoch" href="do/classbrowser/epoch" />
+    </navitem>
+  </navigation>
+
+  <navigation id="search-matrikel">
+    <navitem id="search_cug-matrikel-bar" i18n="Nav.Profkat.Search" href="do/search/cug-matrikel-bar">
+      <navitem id="search_cug-matrikel-simple" i18n="Nav.Profkat.Search.Simple" href="do/search/cug-matrikel-simple" />
+      <navitem
+        id="search_cug-matrikel-extended"
+        i18n="Nav.Profkat.Search.Extended"
+        href="do/search/cug-matrikel-extended" />
+    </navitem>
   </navigation>
 </navigations>
