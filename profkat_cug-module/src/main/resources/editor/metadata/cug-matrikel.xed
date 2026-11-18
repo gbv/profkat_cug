@@ -21,7 +21,6 @@
     <xed:bind xpath="@xsi:noNamespaceSchemaLocation" initially="datamodel-matrikel.xsd" />
     <xed:bind xpath="metadata">
       <xed:include ref="failed-validation-messages" />
-      <xed:include uri="resource:editor/metadata/person-includes.xed" ref="state" />
       <xed:include ref="semester" />
       <xed:include ref="enrollment-date" />
       <xed:include ref="enrollment-number" />

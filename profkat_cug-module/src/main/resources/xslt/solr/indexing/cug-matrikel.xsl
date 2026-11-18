@@ -19,7 +19,6 @@
     <xsl:call-template name="prior-studies" />
     <xsl:call-template name="school-certificate" />
     <xsl:call-template name="record-content" />
-    <xsl:call-template name="status" />
   </xsl:template>
 
   <xsl:template name="school-certificate">
@@ -186,14 +185,6 @@
     <xsl:if test="box.record-content/record-content">
       <field name="cug.matrikel.record_content">
         <xsl:value-of select="box.record-content/record-content" />
-      </field>
-    </xsl:if>
-  </xsl:template>
-
-  <xsl:template name="status">
-    <xsl:if test="box.status/status">
-      <field name="cug.matrikel.status">
-        <xsl:value-of select="box.status/status/text()" />
       </field>
     </xsl:if>
   </xsl:template>

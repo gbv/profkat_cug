@@ -134,13 +134,5 @@
       "multiValued": false,
       "stored": true
     }
-  },
-  {
-    "add-field": {
-      "name": "cug.matrikel.status",
-      "type": "string",
-      "multiValued": false,
-      "stored": true
-    }
   }
 ]
