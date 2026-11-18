@@ -54,6 +54,40 @@
         </configuration>
       </plugin>
       <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>xml-maven-plugin</artifactId>
+        <version>1.1.0</version>
+        <dependencies>
+          <dependency>
+            <groupId>org.mycore.plugins</groupId>
+            <artifactId>datamodel-plugin</artifactId>
+            <version>0.7</version>
+          </dependency>
+        </dependencies>
+        <configuration>
+          <transformationSets>
+            <transformationSet>
+              <dir>src/main/datamodel/def</dir>
+              <outputDir>${project.build.outputDirectory}</outputDir>
+              <stylesheet>datamodel2schema.xsl</stylesheet>
+              <fileMappers>
+                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                  <targetExtension>.xsd</targetExtension>
+                </fileMapper>
+              </fileMappers>
+            </transformationSet>
+          </transformationSets>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>transform</goal>
+            </goals>
+            <phase>compile</phase>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
         <groupId>com.github.eirslett</groupId>
         <artifactId>frontend-maven-plugin</artifactId>
         <version>${frontend-maven-plugin.version}</version>
