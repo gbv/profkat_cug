@@ -17,6 +17,10 @@
       <label xml:lang="de" text="Architektur" />
       <label xml:lang="en" text="Architecture" />
     </category>
+    <category ID="cug_art_history">
+      <label xml:lang="de" text="Kunstgeschichte" />
+      <label xml:lang="en" text="Art History" />
+    </category>
     <category ID="cug_astronomy">
       <label xml:lang="de" text="Astronomie" />
       <label xml:lang="en" text="Astronomy" />
