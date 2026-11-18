@@ -3,6 +3,7 @@
   xmlns="http://www.w3.org/1999/xhtml"
   xmlns:mcrclass="http://www.mycore.de/xslt/classification"
   xmlns:mcri18n="http://www.mycore.de/xslt/i18n"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   exclude-result-prefixes="#all"
   expand-text="yes">
@@ -14,6 +15,7 @@
 
   <xsl:param name="CurrentLang" />
   <xsl:param name="DefaultLang" />
+  <xsl:param name="WebApplicationBaseURL" />
 
   <xsl:template match="/mycoreobject[contains(@ID, '_matrikel_')]">
     <xsl:variable name="project" select="substring-before(@ID, '_')" />
@@ -118,11 +120,23 @@
   </xsl:template>
 
   <xsl:template name="display-prior-enrollment">
-    <xsl:if test="./metadata/box.prior-enrollment/prior-enrollment/text()">
-      <xsl:call-template name="display-text">
+    <xsl:variable name="prior-enrollment" select="(./metadata/box.prior-enrollment/prior-enrollment[@xlink:href])[1]" />
+    <xsl:if test="$prior-enrollment">
+      <xsl:call-template name="dd_block">
         <xsl:with-param name="key" select="'prior-enrollment'" />
-        <xsl:with-param name="label-key" select="'cug.priorEnrollment'" />
-        <xsl:with-param name="text" select="./metadata/box.prior-enrollment/prior-enrollment/text()" />
+        <xsl:with-param name="labelkey" select="'cug.priorEnrollment'" />
+        <xsl:with-param name="items">
+          <tr>
+            <td>
+              <a href="{$WebApplicationBaseURL}resolve/id/{$prior-enrollment/@xlink:href}">
+                <xsl:value-of select="
+                  if (normalize-space($prior-enrollment/@xlink:title)) then $prior-enrollment/@xlink:title
+                  else $prior-enrollment/@xlink:href
+                " />
+              </a>
+            </td>
+          </tr>
+        </xsl:with-param>
       </xsl:call-template>
     </xsl:if>
   </xsl:template>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="3.0"
   xmlns:solrutil="http://mycore.org/cug/xslt/solrutil"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   exclude-result-prefixes="#all">
 
@@ -174,11 +175,11 @@
   </xsl:template>
 
   <xsl:template name="prior-enrollment">
-    <xsl:if test="box.prior-enrollment/prior-enrollment">
+    <xsl:for-each select="box.prior-enrollment/prior-enrollment[@xlink:href]">
       <field name="cug.matrikel.prior_enrollment">
-        <xsl:value-of select="box.prior-enrollment/prior-enrollment" />
+        <xsl:value-of select="@xlink:href" />
       </field>
-    </xsl:if>
+    </xsl:for-each>
   </xsl:template>
 
   <xsl:template name="record-content">
